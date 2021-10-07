@@ -1,0 +1,61 @@
+body {
+  font-family: "Open Sans" !important;
+  font-size: 18px;
+}
+
+.button {
+  width: 10%;
+  background-color: #15305d;
+  border-color: #15305d;
+  color: white;
+}
+
+.campusContainer {
+  width: 50%;
+}
+
+.container {
+  background-color: aqua;
+  height: 100vh;
+  width: 100vw;
+}
+
+.formContainer {
+}
+
+.loginBox {
+  text-align: center;
+}
+
+.loginCampus3 {
+  width: 100%;
+  height: 100vh;
+  object-fit: fill;
+}
+
+.logo {
+  margin-top: -10%;
+  margin-bottom: 5%;
+  width: 40%;
+}
+
+hr {
+  width: 20%;
+}
+
+.image {
+  width: 50%;
+  height: 100vh;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.parentDiv {
+  display: flex;
+  flex-direction: row;
+}
