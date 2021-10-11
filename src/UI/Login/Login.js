@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import Logo from "./Logo.png";
-import Campus from "./LoginImage";
+//import Campus from "./LoginImage";
 import LoginCampus3 from "./LoginCampus3.jpg";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+//import Container from "react-bootstrap/Container";
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
+
 
 class LogInForm extends Component {
   constructor(props) {
@@ -53,8 +54,9 @@ class LogInForm extends Component {
           <form onSubmit={this.handleSubmit}>
             <div className="loginBox">
               <img className="logo" src={Logo} alt="logo" />
-              <h3>Sign in</h3>
               <hr />
+              <h3>Sign in</h3>
+              
               <div>
                 <label>Username</label>
                 <br />
@@ -92,7 +94,7 @@ class LogInForm extends Component {
                 By clicking "Log in", I agree to the Terms of Use and have read
                 the Privacy Notice
               </p>
-              <button type="submit" className="button">
+              <button type="submit" className="button" >
                 Log in
               </button>
             </div>
