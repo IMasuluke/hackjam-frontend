@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import Logo from "./Logo.png";
-import Campus from "./LoginImage";
 import LoginCampus3 from "./LoginCampus3.jpg";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 class LogInForm extends Component {
   constructor(props) {
@@ -54,7 +55,7 @@ class LogInForm extends Component {
             <div className="loginBox">
               <img className="logo" src={Logo} alt="logo" />
               <h3>Sign in</h3>
-              <hr />
+              <hr className="loginHr" />
               <div>
                 <label>Username</label>
                 <br />
@@ -82,7 +83,9 @@ class LogInForm extends Component {
               <br />
               <p>
                 <a
+                  className="forgottenPassword"
                   href="https://mylmsft.institution.africa/login/forgot_password.php"
+                  style={{ color: "black" }}
                   target="_blank"
                 >
                   Forgotten your Username or Password?
@@ -92,7 +95,7 @@ class LogInForm extends Component {
                 By clicking "Log in", I agree to the Terms of Use and have read
                 the Privacy Notice
               </p>
-              <button type="submit" className="button">
+              <button type="submit" className="buttonLogin">
                 Log in
               </button>
             </div>
