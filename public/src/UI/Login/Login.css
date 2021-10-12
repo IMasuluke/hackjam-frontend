@@ -15,14 +15,14 @@ body {
   width: 60%;
 }
 
-.container {
+/* .container {
   background-color: aqua;
   height: 100vh;
   width: 100vw;
-}
+} */
 
-.formContainer {
-}
+/* .formContainer {
+} */
 
 .loginBox {
   text-align: center;
@@ -33,7 +33,7 @@ body {
   height: 100vh;
   object-fit: cover;
 }
- /* -10 and 5 */
+/* -10 and 5 */
 .logo {
   margin-top: auto;
   margin-bottom: auto;
