@@ -3,11 +3,13 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import Login from "./UI/Login/Login";
 import reportWebVitals from "./reportWebVitals";
+import StudnetHub from "./Pages/StudentPortal/StudentPotal";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Login />
-  </React.StrictMode>,
+    {/* <Login /> */}
+    < StudnetHub />
+     </React.StrictMode>,
   document.getElementById("root")
 );
 

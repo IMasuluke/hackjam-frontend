@@ -1,0 +1,16 @@
+body {
+  font-family: "Open Sans" !important;
+  font-size: 18px;
+}
+
+.parentDiv {
+  display: flex;
+  flex-direction: row;
+  background-color: blueviolet;
+}
+
+.FindUs {
+    text-align: center;
+    background-color: brown;
+}
+
