@@ -14,7 +14,7 @@ class HeaderForm extends Component {
 
         render (){
         return (
-            < Container fluid ClassName= "ParentContainer">
+            < div ClassName= "ParentContainer">
 
             
     	        <Row>
@@ -83,7 +83,7 @@ class HeaderForm extends Component {
                 </Container>
             </Navbar>
 
-            </Container>
+            </div>
             
         );
     }
