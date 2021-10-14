@@ -1,8 +1,9 @@
 import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 import { Container, col, row, button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./ReturningStudent.css";
 
 const WelcomeBack = () => {
   return (

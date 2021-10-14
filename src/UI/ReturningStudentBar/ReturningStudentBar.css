@@ -1,0 +1,24 @@
+.BarDiv {
+  text-align: center;
+}
+
+.BarDivTextReturningStudent {
+  font-family: Arial;
+  font-weight: lighter;
+  font-size: small;
+  position: relative;
+  margin-right: 31%;
+}
+
+.BarDivTextStep {
+  font-family: Arial;
+  font-weight: lighter;
+  font-size: small;
+  position: relative;
+  margin-left: 31%;
+}
+
+.HrBar {
+  position: relative;
+  width: 17%;
+}

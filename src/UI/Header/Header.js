@@ -1,6 +1,7 @@
 import { render } from "@testing-library/react";
 import React from "react";
-import Logo from "./Logo.png";
+import Logo from "../Login/Logo.png";
+import "./Header.css";
 
 const Header = () => {
   render();

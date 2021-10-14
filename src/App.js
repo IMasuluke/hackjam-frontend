@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter, Router, Switch, Route, Link } from "react-router-dom";
-import WelcomeBack from "./UI/Login/ReturningStudentWelcome";
+import WelcomeBack from "./UI/ReturningStudent/ReturningStudentWelcome";
 import LogInForm from "./UI/Login/Login";
-import StudentAdvisorProfile from "./UI/Login/StudentAdvisorProfile";
-import ReturningStudentBar from "./UI/Login/ReturningStudentBar";
-import ReturningStudentWelcome1 from "./UI/Login/ReturningStudentWelcome1";
-import ReturningStudentWelcome2 from "./UI/Login/ReturningStudentWelcome2";
-import ReturningStudentWelcome3 from "./UI/Login/ReturningStudentWelcome3";
-import ReturningStudentWelcome4 from "./UI/Login/ReturningStudentWelcome4";
+import StudentAdvisorProfile from "./UI/StudentAdvisorProfile/StudentAdvisorProfile";
+import ReturningStudentBar from "./UI/ReturningStudentBar/ReturningStudentBar";
+import ReturningStudentWelcome1 from "./UI/ReturningStudent/ReturningStudentWelcome1";
+import ReturningStudentWelcome2 from "./UI/ReturningStudent/ReturningStudentWelcome2";
+import ReturningStudentWelcome3 from "./UI/ReturningStudent/ReturningStudentWelcome3";
+import ReturningStudentWelcome4 from "./UI/ReturningStudent/ReturningStudentWelcome4";
 
 export default function App() {
   return (
