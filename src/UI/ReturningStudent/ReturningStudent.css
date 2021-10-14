@@ -1,0 +1,35 @@
+.buttonBegin {
+  height: 10%;
+  opacity: 100%;
+  border-color: #707070;
+  width: 20%;
+  background-color: #1c4285;
+  color: white;
+}
+
+.ReturningStudentForm {
+  margin-left: 5%;
+}
+
+.returningStudentWelcomeInputBox {
+  margin-left: 5%;
+}
+
+.ReturningStudentList {
+  list-style: none;
+}
+
+.welcomeBack {
+  position: absolute;
+  margin-top: 3%;
+  height: 50vh;
+  margin-left: 20%;
+  margin-right: 20%;
+  outline-style: solid;
+  outline-width: thin;
+}
+
+.welcomeBackBox {
+  margin-top: 5%;
+  margin-left: 5%;
+}
