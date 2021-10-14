@@ -8,6 +8,7 @@ import ReturningStudentWelcome1 from "./UI/ReturningStudent/ReturningStudentWelc
 import ReturningStudentWelcome2 from "./UI/ReturningStudent/ReturningStudentWelcome2";
 import ReturningStudentWelcome3 from "./UI/ReturningStudent/ReturningStudentWelcome3";
 import ReturningStudentWelcome4 from "./UI/ReturningStudent/ReturningStudentWelcome4";
+import StudentPortalForm from "./Pages/StudentPortal/StudentPotal"
 
 export default function App() {
   return (
@@ -44,6 +45,11 @@ export default function App() {
           exact
           path="/StudentAdvisorProfile"
           component={StudentAdvisorProfile}
+        />
+        <Route
+          exact
+          path="/Portal"
+          component={StudentPortalForm}
         />
       </Switch>
     </BrowserRouter>

@@ -50,7 +50,7 @@ class StudentPortalForm extends Component {
 
                  <Footer/> 
             </Container>
-
+            
          );
      }
 }
