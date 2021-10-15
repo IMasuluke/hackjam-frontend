@@ -3,11 +3,14 @@ import React, { Component } from "react";
 import Footer from "../../Components/StudentPortal/Footer/Footer";
 import Header from "../../Components/StudentPortal/Header/Header"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button,Container,Row, Col, Image, Nav, ProgressBar,Card, ListGroup } from 'react-bootstrap';
+import { Button,Container,Row, Col, Image, Nav, ProgressBar,Card, ListGroup, Carousel } from 'react-bootstrap';
 import "./StudentPortal.css";
 import YoutubeEmbed from "./YoutubeEmbed";
 import {   MdLocalMovies, mdStars} from "react-icons/md";
 import Progress from "./ProgressBar";
+import Campus from "../../Images/EduvosLogo(Blue).png";
+import News from "./News";
+import Agenda from "./Agenda";
 
 
 const now = 80;
@@ -23,6 +26,12 @@ class StudentPortalForm extends Component {
                  <Header/> <br />
                         <Container fluid className= "PorgressBar">
                             <Row>
+                                <Col>
+                                    Test
+                                </Col>
+                                <Col>
+                                Button
+                                </Col>
                                 <Col  className= "Progress"> 
                                 My Progress: <ProgressBar now={now} label={`${now}%` } />
 
@@ -32,7 +41,7 @@ class StudentPortalForm extends Component {
 
                         <Container className= "Structre" fluid>
                             <Row> 
-                                <Col>
+                                <Col xs={9}>
                                     <Row>
                                         <Col>
                                             <Card>
@@ -44,11 +53,7 @@ class StudentPortalForm extends Component {
                                                         <Nav.Item>
                                                             <Nav.Link href="#link">Link</Nav.Link>
                                                         </Nav.Item>
-                                                        <Nav.Item>
-                                                            <Nav.Link href="#disabled" disabled>
-                                                            Disabled
-                                                            </Nav.Link>
-                                                        </Nav.Item>
+                                                        
                                                         </Nav>
                                                     </Card.Header>
                                                     <Card.Body>
@@ -58,7 +63,8 @@ class StudentPortalForm extends Component {
                                                         You do not have any messages.
                                                         <hr />
                                                         </Card.Text>
-                                                        <Button variant="primary">Go somewhere</Button>
+                                                            2021 Enrollement is now open.<br />
+                                                        <Button variant="danger">Enrollment</Button>
                                                     </Card.Body>
                                              </Card>
                                         </Col>
@@ -74,9 +80,17 @@ class StudentPortalForm extends Component {
                                         </Col>
                                         <Row>
                                             <Col>
-                                                <MdLocalMovies />
-                                                <h1>Now Playing</h1>
+                                             <br />
+                                               <h3> <MdLocalMovies />
+                                                 Now Playing </h3>
                                             <YoutubeEmbed embedId="S_e66j1NFMo" />
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col>
+                                                <br />
+                                                
+                                                <News />
                                             </Col>
                                         </Row>
                                     </Row>
@@ -94,31 +108,73 @@ class StudentPortalForm extends Component {
                                     </Row>
                                     <hr/>
                                      <Row>
-                                        <Col>Task Bar</Col>
+                                        <Col>Task Bar
+                                            <Agenda />
+                                        </Col>
                                     </Row>
                                         <hr/>
                                     <Row>
-                                        <Col>Advert</Col>
+                                        <Col>
+                                            <Carousel>
+                                                <Carousel.Item>
+                                                    <img
+                                                    className="d-block w-100"
+                                                    src={Campus}
+                                                    alt="First slide"
+                                                    />
+                                                    <Carousel.Caption>
+                                                    <h3>First slide label</h3>
+                                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                                    </Carousel.Caption>
+                                                </Carousel.Item>
+                                                <Carousel.Item>
+                                                    <img
+                                                    className="d-block w-100"
+                                                    src={Campus}
+                                                    alt="Second slide"
+                                                    />
+
+                                                    <Carousel.Caption>
+                                                    <h3>Second slide label</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                    </Carousel.Caption>
+                                                </Carousel.Item>
+                                                <Carousel.Item>
+                                                    <img
+                                                    className="d-block w-100"
+                                                    src={Campus}
+                                                    alt="Third slide"
+                                                    />
+
+                                                    <Carousel.Caption>
+                                                    <h3>Third slide label</h3>
+                                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                                    </Carousel.Caption>
+                                                </Carousel.Item>
+                                            </Carousel>
+                                        </Col>
                                     </Row>
                                         <hr/>
                                     <Row>
-                                        <Col>Pyscho</Col>
+                                        <Col>
+                                            <Card style={{ width: '18rem' }}>
+                                                <Card.Body>
+                                                    <Card.Title>Eduvous Student Crisis Line</Card.Title>
+                                                    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                                                    <Card.Text>
+                                                    Support fot students experiencing.
+                                                    </Card.Text>
+                                                    <Card.Link href="#">Card Link</Card.Link>
+                                                    <Card.Link href="#">Another Link</Card.Link>
+                                                </Card.Body>
+                                            </Card>
+                                        </Col>
                                     </Row>
                                 </Col>
                                
                             </Row>
                         </Container>
-                    {/* <Container fluid>
-                        <Row>
-                            <Col>
-                                <MdLocalMovies />
-                                <h1>Now Playing</h1>
-                            </Col>
-                        </Row>
-                         <Row>                   
-                        <YoutubeEmbed embedId="S_e66j1NFMo" />
-                        </ Row> 
-                    </Container> <br /> */}
+                  
                         <br />
                  <Footer/> 
             </Container>

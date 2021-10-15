@@ -52,10 +52,10 @@ class HeaderForm extends Component {
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.4">
                                
-                                 <button variant= "light">
+                                 
                                      <img className="ImageKarri" roundedCircle src={ImageKarri} alt="CampusImage" fluid roundedCircle/>
-                                     <span>Karri</span> 
-                                 </button> 
+                                   
+                                 
                             </NavDropdown.Item>
                                                       
                          </NavDropdown>
