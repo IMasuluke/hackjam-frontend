@@ -8,6 +8,8 @@ import ReturningStudentWelcome1 from "./UI/ReturningStudent/ReturningStudentWelc
 import ReturningStudentWelcome2 from "./UI/ReturningStudent/ReturningStudentWelcome2";
 import ReturningStudentWelcome3 from "./UI/ReturningStudent/ReturningStudentWelcome3";
 import ReturningStudentWelcome4 from "./UI/ReturningStudent/ReturningStudentWelcome4";
+import StudentPortalForm from "./Pages/StudentPortal/StudentPotal";
+import CountryDropDown from "./Components/CountryDropDown/CountryDropDown";
 
 export default function App() {
   return (
@@ -45,6 +47,8 @@ export default function App() {
           path="/StudentAdvisorProfile"
           component={StudentAdvisorProfile}
         />
+        <Route exact path="/StudentPortal" component={StudentPortalForm} />
+        <Route exact path="/CountryDropDown" component={CountryDropDown} />
       </Switch>
     </BrowserRouter>
   );

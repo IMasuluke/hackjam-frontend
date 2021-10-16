@@ -10,6 +10,8 @@
     "bootstrap": "^5.1.1",
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.0-rc.0",
+    "react-country-dropdown": "^1.0.4",
+    "react-custom-toggle": "^1.0.5",
     "react-dom": "^17.0.2",
     "react-router": "^5.2.1",
     "react-router-dom": "^5.3.0",

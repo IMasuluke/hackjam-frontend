@@ -53,11 +53,11 @@ class LogInForm extends Component {
         </div>
         <div className="loginForm">
           <form onSubmit={this.handleSubmit}>
+            <br />
             <div className="loginBox">
               <img className="logo" src={Logo} alt="logo" />
-
               <hr className="loginHr" />
-              <h3>Sign in</h3>
+              <h3 className="h3SignIn">Sign in</h3>
               <div>
                 <label className="inputHeaders">Username</label>
                 <br />
@@ -69,6 +69,10 @@ class LogInForm extends Component {
                 />
               </div>
               <br />
+              <input type="checkbox" className="checkBox" />
+              <span>
+                <p className="checkBoxText">Remember Me</p>
+              </span>
               <div>
                 <label className="inputHeaders">Password</label>
                 <br />
@@ -79,17 +83,13 @@ class LogInForm extends Component {
                   onChange={this.handlePasswordChange}
                 />
               </div>
-              <br />
-              <br />
-              <input type="checkbox" className="checkBox" />
-              <span className="checkBoxText">Remember Me</span>
+
               <br />
               <br />
               <p>
                 <a
                   className="forgottenPassword"
                   href="https://mylmsft.institution.africa/login/forgot_password.php"
-                  style={{ color: "black" }}
                   target="_blank"
                 >
                   Forgotten your Username or Password?
@@ -99,6 +99,7 @@ class LogInForm extends Component {
                 By clicking "Log in", I agree to the Terms of Use and have read
                 the Privacy Notice
               </p>
+
               <button className="buttonLogin" type="submit">
                 Log in
               </button>
