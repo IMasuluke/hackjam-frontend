@@ -6,12 +6,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button,Container,Row, Col, Image, Nav, ProgressBar,Card, ListGroup, Carousel } from 'react-bootstrap';
 import "./StudentPortal.css";
 import YoutubeEmbed from "./YoutubeEmbed";
-import {   MdLocalMovies, mdStars} from "react-icons/md";
+import {   MdLocalMovies} from "react-icons/md";
+import {  ImLink} from "react-icons/im";
+import {   IoMdSchool} from "react-icons/io";
 import Progress from "./ProgressBar";
-import Campus from "../../Images/EduvosLogo(Blue).png";
 import News from "./News";
 import Agenda from "./Agenda";
-
+import Favourite from "./Favourite";
+import Ads from "./Adverts";
+import Adds from "./Additional";
 
 const now = 80;
  
@@ -69,14 +72,8 @@ class StudentPortalForm extends Component {
                                              </Card>
                                         </Col>
                                         <Col>
-                                            <Card style={{ width: '18rem' }}>
-                                                <Card.Header> <mdStars/> Most used</Card.Header>
-                                                <ListGroup variant="flush">
-                                                    <ListGroup.Item>Libary</ListGroup.Item>
-                                                    <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                                                    <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-                                                </ListGroup>
-                                            </Card>
+                                         
+                                            <Favourite />
                                         </Col>
                                         <Row>
                                             <Col>
@@ -93,6 +90,14 @@ class StudentPortalForm extends Component {
                                                 <News />
                                             </Col>
                                         </Row>
+                                         <Row>
+                                              
+                                            <Col>
+                                            <br />
+                                               <Adds />                                             
+                                                
+                                            </Col>
+                                        </Row>
                                     </Row>
                                 </Col>
 
@@ -100,72 +105,63 @@ class StudentPortalForm extends Component {
                                     <Row>
                                         <Col>
                                             <Card style={{ width: '18rem' }}>
-                                                        <Card.Header> <mdStars/> My Module</Card.Header>
-                                                        <Card.Title href="#">Computer Science </Card.Title>
+                                                        <Card.Header> <IoMdSchool/> My Module</Card.Header>
+                                                        <ListGroup variant="flush">
+                                                            <ListGroup.Item href="#/keke1">
+                                                             Computer Science
+
+                                                            </ListGroup.Item>
+                                                        </ListGroup>
                                                         <Card.Body><mdStars/></Card.Body> 
                                             </Card>
                                         </Col>
                                     </Row>
                                     <hr/>
                                      <Row>
-                                        <Col>Task Bar
+                                        <Col>
                                             <Agenda />
                                         </Col>
                                     </Row>
                                         <hr/>
                                     <Row>
                                         <Col>
-                                            <Carousel>
-                                                <Carousel.Item>
-                                                    <img
-                                                    className="d-block w-100"
-                                                    src={Campus}
-                                                    alt="First slide"
-                                                    />
-                                                    <Carousel.Caption>
-                                                    <h3>First slide label</h3>
-                                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                                    </Carousel.Caption>
-                                                </Carousel.Item>
-                                                <Carousel.Item>
-                                                    <img
-                                                    className="d-block w-100"
-                                                    src={Campus}
-                                                    alt="Second slide"
-                                                    />
-
-                                                    <Carousel.Caption>
-                                                    <h3>Second slide label</h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                                    </Carousel.Caption>
-                                                </Carousel.Item>
-                                                <Carousel.Item>
-                                                    <img
-                                                    className="d-block w-100"
-                                                    src={Campus}
-                                                    alt="Third slide"
-                                                    />
-
-                                                    <Carousel.Caption>
-                                                    <h3>Third slide label</h3>
-                                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                                    </Carousel.Caption>
-                                                </Carousel.Item>
-                                            </Carousel>
+                                        
+                                          <Ads />  
+                                        </Col>
+                                    </Row>
+                                    <hr/>
+                                    <Row>
+                                        <Col>
+                                            <Card style={{ width: '18rem' }}>
+                                                 <Card.Header> < ImLink /> Quick Links</Card.Header>
+                                                <Card.Body>
+                                                  
+                                                   <Card.Text>
+                                                    Support fot students experiencing.
+                                                    </Card.Text>
+                                                    <Card.Link href="#">Counselling</Card.Link>
+                                                   
+                                                </Card.Body>
+                                            </Card>
                                         </Col>
                                     </Row>
                                         <hr/>
                                     <Row>
                                         <Col>
-                                            <Card style={{ width: '18rem' }}>
+                                            <Card style={{ width: '18rem' }}> 
+                                            <Card.Header> Emotional Health</Card.Header>
                                                 <Card.Body>
+                                                    
                                                     <Card.Title>Eduvous Student Crisis Line</Card.Title>
-                                                    <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+                                                    
                                                     <Card.Text>
-                                                    Support fot students experiencing.
+                                                    Support fot students experiencing emotional and psychological distess. The
+                                                    Toll free line is managed by professionals and is avaiable 24/7/365.
+                                                    Call: 0800 111 3131.
+                                                    You can also contact the counselling and Career Development Unit.
                                                     </Card.Text>
-                                                    <Card.Link href="#">Card Link</Card.Link>
-                                                    <Card.Link href="#">Another Link</Card.Link>
+                                                    <Card.Link href="#">Counselling</Card.Link>
+                                                   
                                                 </Card.Body>
                                             </Card>
                                         </Col>

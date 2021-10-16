@@ -23,7 +23,7 @@ class FooterForm extends Component {
                     </Col>
                     <Col className= "QuickLinks">
                     <Nav>
-                        <h3>Quick links</h3> <br/>
+                        <h3>Quick links</h3>
                         <h4>Career</h4> 
                         <h4>Eduvos Shop</h4>
                         <h4>FAQ</h4>
@@ -42,8 +42,13 @@ class FooterForm extends Component {
                             </Col>
                         </Row>
                         <Row>
+                            <Col>
                             <h3>Privacy Policy | POPI | Terms & Conditions</h3>
+                            </Col>
                         </Row>
+                    </Col>
+                    <Col xs= {9}>
+                        Yes
                     </Col>
                 </Row>
                  
