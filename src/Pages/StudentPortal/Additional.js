@@ -1,28 +1,27 @@
 import React, { Component } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button,Container, Row, Col,Card, ListGroup ,CardGroup } from 'react-bootstrap';
+import Health from "../../Images/Support/Technology_tools.png";
+import Tutoring from "../../Images/Adverts/Tutoring.jpg";
+import Campus from "../../Images/EduvosLogo(Blue).png";
 
-import { Button,Container,Row, Col,Card, ListGroup, Carousel, CardGroup } from 'react-bootstrap';
-import { IoNewspaperOutline  } from "react-icons/io5";
 
-class NewsForm extends Component {
+class CardForms extends Component {
    
-
      render() {
          return (
-             <div>
-                 <h3> <IoNewspaperOutline />Latest News | News </ h3>
+                <div>
+                 <h3> Additional </ h3>
                 <CardGroup>
                 <Card>
-                    <Card.Img variant="top" src="holder.js/100px160" />
+                    <Card.Header>Health & Wellbeing</Card.Header>
+                    <Card.Img variant="top" src={Health} />
                     <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                    <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.
-                    </Card.Text>
+                    <Card.Link>Safet on Campus</ Card.Link> <br />
+                    <Card.Link>School Clince</ Card.Link> <br />
+                    <Card.Link>Counselling Services</ Card.Link>
                     </Card.Body>
-                    <Card.Footer>
-                    <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
+                   
                 </Card>
                 <Card>
                     <Card.Img variant="top" src="holder.js/100px160" />
@@ -33,9 +32,7 @@ class NewsForm extends Component {
                         content.{' '}
                     </Card.Text>
                     </Card.Body>
-                    <Card.Footer>
-                    <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
+                    
                 </Card>
                 <Card>
                     <Card.Img variant="top" src="holder.js/100px160" />
@@ -47,13 +44,11 @@ class NewsForm extends Component {
                         show that equal height action.
                     </Card.Text>
                     </Card.Body>
-                    <Card.Footer>
-                    <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
+                    
                 </Card>
                 </CardGroup>
                 </div>
-             );
-     }
-}
-export default NewsForm;
+            );
+        }
+    }
+    export default CardForms;
