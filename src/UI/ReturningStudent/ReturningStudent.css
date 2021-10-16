@@ -7,6 +7,45 @@
   color: white;
 }
 
+.cancelButton {
+  margin-left: 5vw;
+  font-weight: bold;
+  font-size: 30px;
+  width: 10vw;
+  background-color: white;
+  color: #15305d;
+  border-color: #15305d;
+}
+
+.cancelButton:hover {
+  background-color: #15305d;
+  color: white;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.leftDiv {
+  display: inline-table;
+  align-items: left;
+  justify-content: center;
+  width: 40%;
+}
+
+.nextButton {
+  font-size: 30px;
+  font-weight: bold;
+  width: 10vw;
+  background-color: #15305d;
+  color: white;
+  border-color: #15305d;
+}
+
+.nextButton:hover {
+  background-color: #15305d;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
 .ReturningStudentForm {
   margin-left: 5%;
 }
@@ -17,6 +56,12 @@
 
 .ReturningStudentList {
   list-style: none;
+}
+
+.rightDiv {
+  margin-left: 17vw;
+  display: inline-flex;
+  width: 40%;
 }
 
 .welcomeBack {

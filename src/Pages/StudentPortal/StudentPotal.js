@@ -3,12 +3,18 @@ import React, { Component } from "react";
 import Footer from "../../Components/StudentPortal/Footer/Footer";
 import Header from "../../Components/StudentPortal/Header/Header"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button,Container,Row, Col, Image, Nav, ProgressBar,Card, ListGroup } from 'react-bootstrap';
+import { Button,Container,Row, Col, Image, Nav, ProgressBar,Card, ListGroup, Carousel } from 'react-bootstrap';
 import "./StudentPortal.css";
 import YoutubeEmbed from "./YoutubeEmbed";
-import {   MdLocalMovies, mdStars} from "react-icons/md";
+import {   MdLocalMovies} from "react-icons/md";
+import {  ImLink} from "react-icons/im";
+import {   IoMdSchool} from "react-icons/io";
 import Progress from "./ProgressBar";
-
+import News from "./News";
+import Agenda from "./Agenda";
+import Favourite from "./Favourite";
+import Ads from "./Adverts";
+import Adds from "./Additional";
 
 const now = 80;
  
@@ -23,6 +29,12 @@ class StudentPortalForm extends Component {
                  <Header/> <br />
                         <Container fluid className= "PorgressBar">
                             <Row>
+                                <Col>
+                                    Test
+                                </Col>
+                                <Col>
+                                Button
+                                </Col>
                                 <Col  className= "Progress"> 
                                 My Progress: <ProgressBar now={now} label={`${now}%` } />
 
@@ -32,7 +44,7 @@ class StudentPortalForm extends Component {
 
                         <Container className= "Structre" fluid>
                             <Row> 
-                                <Col>
+                                <Col xs={9}>
                                     <Row>
                                         <Col>
                                             <Card>
@@ -44,11 +56,7 @@ class StudentPortalForm extends Component {
                                                         <Nav.Item>
                                                             <Nav.Link href="#link">Link</Nav.Link>
                                                         </Nav.Item>
-                                                        <Nav.Item>
-                                                            <Nav.Link href="#disabled" disabled>
-                                                            Disabled
-                                                            </Nav.Link>
-                                                        </Nav.Item>
+                                                        
                                                         </Nav>
                                                     </Card.Header>
                                                     <Card.Body>
@@ -58,25 +66,36 @@ class StudentPortalForm extends Component {
                                                         You do not have any messages.
                                                         <hr />
                                                         </Card.Text>
-                                                        <Button variant="primary">Go somewhere</Button>
+                                                            2021 Enrollement is now open.<br />
+                                                        <Button variant="danger">Enrollment</Button>
                                                     </Card.Body>
                                              </Card>
                                         </Col>
                                         <Col>
-                                            <Card style={{ width: '18rem' }}>
-                                                <Card.Header> <mdStars/> Most used</Card.Header>
-                                                <ListGroup variant="flush">
-                                                    <ListGroup.Item>Libary</ListGroup.Item>
-                                                    <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                                                    <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-                                                </ListGroup>
-                                            </Card>
+                                         
+                                            <Favourite />
                                         </Col>
                                         <Row>
                                             <Col>
-                                                <MdLocalMovies />
-                                                <h1>Now Playing</h1>
+                                             <br />
+                                               <h3> <MdLocalMovies />
+                                                 Now Playing </h3>
                                             <YoutubeEmbed embedId="S_e66j1NFMo" />
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col>
+                                                <br />
+                                                
+                                                <News />
+                                            </Col>
+                                        </Row>
+                                         <Row>
+                                              
+                                            <Col>
+                                            <br />
+                                               <Adds />                                             
+                                                
                                             </Col>
                                         </Row>
                                     </Row>
@@ -86,43 +105,76 @@ class StudentPortalForm extends Component {
                                     <Row>
                                         <Col>
                                             <Card style={{ width: '18rem' }}>
-                                                        <Card.Header> <mdStars/> My Module</Card.Header>
-                                                        <Card.Title href="#">Computer Science </Card.Title>
+                                                        <Card.Header> <IoMdSchool/> My Module</Card.Header>
+                                                        <ListGroup variant="flush">
+                                                            <ListGroup.Item href="#/keke1">
+                                                             Computer Science
+
+                                                            </ListGroup.Item>
+                                                        </ListGroup>
                                                         <Card.Body><mdStars/></Card.Body> 
                                             </Card>
                                         </Col>
                                     </Row>
                                     <hr/>
                                      <Row>
-                                        <Col>Task Bar</Col>
+                                        <Col>
+                                            <Agenda />
+                                        </Col>
                                     </Row>
                                         <hr/>
                                     <Row>
-                                        <Col>Advert</Col>
+                                        <Col>
+                                        
+                                          <Ads />  
+                                        </Col>
+                                    </Row>
+                                    <hr/>
+                                    <Row>
+                                        <Col>
+                                            <Card style={{ width: '18rem' }}>
+                                                 <Card.Header> < ImLink /> Quick Links</Card.Header>
+                                                <Card.Body>
+                                                  
+                                                   <Card.Text>
+                                                    Support fot students experiencing.
+                                                    </Card.Text>
+                                                    <Card.Link href="#">Counselling</Card.Link>
+                                                   
+                                                </Card.Body>
+                                            </Card>
+                                        </Col>
                                     </Row>
                                         <hr/>
                                     <Row>
-                                        <Col>Pyscho</Col>
+                                        <Col>
+                                            <Card style={{ width: '18rem' }}> 
+                                            <Card.Header> Emotional Health</Card.Header>
+                                                <Card.Body>
+                                                    
+                                                    <Card.Title>Eduvous Student Crisis Line</Card.Title>
+                                                    
+                                                    <Card.Text>
+                                                    Support fot students experiencing emotional and psychological distess. The
+                                                    Toll free line is managed by professionals and is avaiable 24/7/365.
+                                                    Call: 0800 111 3131.
+                                                    You can also contact the counselling and Career Development Unit.
+                                                    </Card.Text>
+                                                    <Card.Link href="#">Counselling</Card.Link>
+                                                   
+                                                </Card.Body>
+                                            </Card>
+                                        </Col>
                                     </Row>
                                 </Col>
                                
                             </Row>
                         </Container>
-                    {/* <Container fluid>
-                        <Row>
-                            <Col>
-                                <MdLocalMovies />
-                                <h1>Now Playing</h1>
-                            </Col>
-                        </Row>
-                         <Row>                   
-                        <YoutubeEmbed embedId="S_e66j1NFMo" />
-                        </ Row> 
-                    </Container> <br /> */}
+                  
                         <br />
                  <Footer/> 
             </Container>
-
+            
          );
      }
 }
