@@ -24,7 +24,24 @@
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.h1 {
+  font-family: "Arial";
+  font-size: 30px;
+  color: #707070;
+  font-weight: 200;
+}
+
+.H1Blank {
+  color: white;
+}
+
+.Left {
+  margin-top: -10vh;
+  margin-left: 20vw;
+}
+
 .leftDiv {
+  color: #707070;
   display: inline-table;
   align-items: left;
   justify-content: center;
@@ -46,11 +63,11 @@
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.ReturningStudentForm {
-  margin-left: 5%;
+.ReturningStudentWelcome2Buttons {
+  text-align: center;
 }
 
-.returningStudentWelcomeInputBox {
+.ReturningStudentForm {
   margin-left: 5%;
 }
 
@@ -58,10 +75,19 @@
   list-style: none;
 }
 
+.Right {
+  margin-left: 15vw;
+}
+
 .rightDiv {
+  color: #707070;
   margin-left: 17vw;
   display: inline-flex;
   width: 40%;
+}
+
+.secondH1 {
+  margin-left: -2vw;
 }
 
 .welcomeBack {
