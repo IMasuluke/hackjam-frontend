@@ -9,7 +9,11 @@ import ReturningStudentWelcome2 from "./UI/ReturningStudent/ReturningStudentWelc
 import ReturningStudentWelcome3 from "./UI/ReturningStudent/ReturningStudentWelcome3";
 import ReturningStudentWelcome4 from "./UI/ReturningStudent/ReturningStudentWelcome4";
 import StudentPortalForm from "./Pages/StudentPortal/StudentPotal";
+
+import EventsForm from "./Pages/Events/events";
+
 import CountryDropDown from "./Components/CountryDropDown/CountryDropDown";
+
 
 export default function App() {
   return (
@@ -48,8 +52,21 @@ export default function App() {
           component={StudentAdvisorProfile}
         />
 
+        <Route
+          exact
+          path="/Portal"
+          component={StudentPortalForm}
+        />
+         <Route
+          exact
+          path="/events"
+          component={EventsForm}
+        />
+
+
         <Route exact path="/StudentPortal" component={StudentPortalForm} />
         <Route exact path="/CountryDropDown" component={CountryDropDown} />
+
       </Switch>
     </BrowserRouter>
   );

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Button,Container,Row, Col,Card, ListGroup, Carousel, CardGroup } from 'react-bootstrap';
 import { IoTodayOutline  } from "react-icons/io5";
+import "./StudentPortal.css";
+
 
 class AgendaForm extends Component {
    
@@ -8,7 +10,7 @@ class AgendaForm extends Component {
          return (
 
                     <Card style={{ width: '18rem' }}>
-                     <Card.Header  > <IoTodayOutline /> Agenda</Card.Header>
+                     <Card.Header className= "header" > <IoTodayOutline /> Agenda</Card.Header>
                     <Card.Body>
                        
                         <Card.Title> Today </Card.Title>

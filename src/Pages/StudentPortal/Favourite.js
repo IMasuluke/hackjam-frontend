@@ -6,6 +6,7 @@ import { MdStars  } from "react-icons/md";
 import { ImLibrary, ImProfile  } from "react-icons/im";
 import { BsChatSquareTextFill, BsCalendar3  } from "react-icons/bs";
 import { MdEmail  } from "react-icons/md";
+import "./StudentPortal.css";
 
 class FavouriteForm extends Component {
    
@@ -13,8 +14,8 @@ class FavouriteForm extends Component {
      render() {
          return (
                     <Card style={{ width: '18rem' }}>
-                        <Card.Header> 
-                             <MdStars/> Most used 
+                        <Card.Header className= "header"  > 
+                             <MdStars /> Most used 
                         </Card.Header>
                         <ListGroup variant="flush">
                             <ListGroup.Item href="#/keke1">
