@@ -18,7 +18,38 @@ class ReturningStudentWelcome1 extends Component {
       <div>
         <div>
           <Header />
-          <ReturningStudentBar />
+
+          {/* ReturningStudentBar */}
+
+          <div className="BarDiv">
+            <div>
+              <label className="BarDivTextReturningStudent">
+                <h2 className="h2Size">Returning Student</h2>
+              </label>
+              <label className="BarDivTextStep">
+                <h2 className="h2Size">Step 1 of 4</h2>
+              </label>
+            </div>
+            <br />
+            <br />
+
+            {/* Consider wrapping in div */}
+            <label className="HrBar hrBarLight">
+              <hr />
+            </label>
+            <label className="HrBar">
+              <hr />
+            </label>
+            <label className="HrBar">
+              <hr />
+            </label>
+            <label className="HrBar">
+              <hr />
+            </label>
+            {/* Consider wrapping in div */}
+          </div>
+
+          {/* ReturningStudentBar */}
         </div>
         <div className="leftDiv">
           <form className="ReturningStudentForm">

@@ -1,6 +1,5 @@
 import { render } from "@testing-library/react";
 import React from "react";
-import { ProgressBar } from "react-bootstrap";
 import "./ReturningStudentBar.css";
 
 const ReturningStudentBar = () => {
@@ -19,16 +18,16 @@ const ReturningStudentBar = () => {
         <br />
         <br />
         <label className="HrBar">
-          <ProgressBar value={7} maxRange={10} />
+          <hr />
         </label>
         <label className="HrBar">
-          <ProgressBar value={7} maxRange={10} />
+          <hr />
         </label>
         <label className="HrBar">
-          <ProgressBar value={7} maxRange={10} />
+          <hr />
         </label>
         <label className="HrBar">
-          <ProgressBar value={7} maxRange={10} />
+          <hr />
         </label>
       </div>
     );

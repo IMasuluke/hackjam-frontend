@@ -28,3 +28,11 @@
   position: relative;
   width: 17%;
 }
+
+.hrBarLight {
+  color: #7ecced;
+}
+
+.hrBarHeavy {
+  color: #15305d;
+}

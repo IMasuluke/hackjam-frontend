@@ -12,7 +12,35 @@ class ReturningStudentWelcome3 extends Component {
       <div>
         <div>
           <Header />
-          <ReturningStudentBar />
+
+          {/* ReturningStudentBar */}
+
+          <div className="BarDiv">
+            <div>
+              <label className="BarDivTextReturningStudent">
+                <h2 className="h2Size">Returning Student</h2>
+              </label>
+              <label className="BarDivTextStep">
+                <h2 className="h2Size">Step 3 of 4</h2>
+              </label>
+            </div>
+            <br />
+            <br />
+            <label className="HrBar hrBarHeavy">
+              <hr />
+            </label>
+            <label className="HrBar hrBarHeavy">
+              <hr />
+            </label>
+            <label className="HrBar hrBarLight">
+              <hr />
+            </label>
+            <label className="HrBar">
+              <hr />
+            </label>
+          </div>
+
+          {/* ReturningStudentBar */}
         </div>
         <div>
           <Footer />
