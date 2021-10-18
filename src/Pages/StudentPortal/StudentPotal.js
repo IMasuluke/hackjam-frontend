@@ -29,14 +29,9 @@ class StudentPortalForm extends Component {
                  <Header/> <br />
                         <Container fluid className= "PorgressBar">
                             <Row>
-                                <Col>
-                                    Test
-                                </Col>
-                                <Col>
-                                Button
-                                </Col>
+                                
                                 <Col  className= "Progress"> 
-                                My Progress: <ProgressBar now={now} label={`${now}%` } />
+                                My Progress: <ProgressBar className= "bar" now={now} label={`${now}%` } />
 
                                 </Col>
                             </Row>
@@ -48,7 +43,7 @@ class StudentPortalForm extends Component {
                                     <Row>
                                         <Col>
                                             <Card>
-                                                    <Card.Header>
+                                                    <Card.Header >
                                                         <Nav variant="tabs" defaultActiveKey="#first">
                                                         <Nav.Item>
                                                             <Nav.Link href="#first">Active</Nav.Link>
@@ -58,7 +53,7 @@ class StudentPortalForm extends Component {
                                                         </Nav.Item>
                                                         
                                                         </Nav>
-                                                    </Card.Header>
+                                                    </Card.Header >
                                                     <Card.Body>
                                                         <Card.Title>Welcome Kekeletso Phasha</Card.Title>
                                                         
@@ -101,11 +96,11 @@ class StudentPortalForm extends Component {
                                     </Row>
                                 </Col>
 
-                                <Col> 
+                                <Col className= "Section"> 
                                     <Row>
                                         <Col>
                                             <Card style={{ width: '18rem' }}>
-                                                        <Card.Header> <IoMdSchool/> My Module</Card.Header>
+                                                        <Card.Header className= "header"> <IoMdSchool/> My Module</Card.Header>
                                                         <ListGroup variant="flush">
                                                             <ListGroup.Item href="#/keke1">
                                                              Computer Science
@@ -133,23 +128,23 @@ class StudentPortalForm extends Component {
                                     <Row>
                                         <Col>
                                             <Card style={{ width: '18rem' }}>
-                                                 <Card.Header> < ImLink /> Quick Links</Card.Header>
+                                                 <Card.Header className= "header"> < ImLink /> Quick Links</Card.Header>
                                                 <Card.Body>
                                                   
-                                                   <Card.Text>
-                                                    Support fot students experiencing.
-                                                    </Card.Text>
-                                                    <Card.Link href="#">Counselling</Card.Link>
+                                                    <Card.Link href="#">New Student Orientation </ Card.Link> <br />
+                                                    <Card.Link href="#" >2021 Year Calendar</ Card.Link> <br />
+                                                    <Card.Link href="#"> Graduation</ Card.Link> <br />
+                                                    
                                                    
                                                 </Card.Body>
                                             </Card>
                                         </Col>
                                     </Row>
-                                        <hr/>
+                                        <hr className= "divider"/>
                                     <Row>
                                         <Col>
                                             <Card style={{ width: '18rem' }}> 
-                                            <Card.Header> Emotional Health</Card.Header>
+                                            <Card.Header className= "header"> Emotional Health</Card.Header>
                                                 <Card.Body>
                                                     
                                                     <Card.Title>Eduvous Student Crisis Line</Card.Title>
