@@ -7,16 +7,87 @@
   color: white;
 }
 
-.ReturningStudentForm {
-  margin-left: 5%;
+.cancelButton {
+  margin-left: 5vw;
+  font-weight: bold;
+  font-size: 30px;
+  width: 10vw;
+  background-color: white;
+  color: #15305d;
+  border-color: #15305d;
 }
 
-.returningStudentWelcomeInputBox {
+.cancelButton:hover {
+  background-color: #15305d;
+  color: white;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.h1 {
+  font-family: "Arial";
+  font-size: 30px;
+  color: #707070;
+  font-weight: 200;
+}
+
+.H1Blank {
+  color: white;
+}
+
+.Left {
+  margin-top: -10vh;
+  margin-left: 20vw;
+}
+
+.leftDiv {
+  color: #707070;
+  display: inline-table;
+  align-items: left;
+  justify-content: center;
+  width: 40%;
+}
+
+.nextButton {
+  font-size: 30px;
+  font-weight: bold;
+  width: 10vw;
+  background-color: #15305d;
+  color: white;
+  border-color: #15305d;
+}
+
+.nextButton:hover {
+  background-color: #15305d;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.ReturningStudentWelcome2Buttons {
+  text-align: center;
+}
+
+.ReturningStudentForm {
   margin-left: 5%;
 }
 
 .ReturningStudentList {
   list-style: none;
+}
+
+.Right {
+  margin-left: 15vw;
+}
+
+.rightDiv {
+  color: #707070;
+  margin-left: 17vw;
+  display: inline-flex;
+  width: 40%;
+}
+
+.secondH1 {
+  margin-left: -2vw;
 }
 
 .welcomeBack {

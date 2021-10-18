@@ -17,6 +17,8 @@ body {
 }
 
 .buttonLogin {
+  margin-bottom: -20vh;
+  position: relative;
   width: 70%;
   height: 7vh;
   background-color: #1c4285;
@@ -36,11 +38,16 @@ body {
 }
 
 .checkBox {
-  margin-right: 50%;
+  height: 3vh;
+  width: 3vw;
+  margin-right: 10%;
 }
 
 .checkBoxText {
-  padding-left: -45%;
+  font-weight: 200;
+  font-size: medium;
+  display: inline-table;
+  margin-right: 30%;
 }
 
 /* .container {
@@ -50,6 +57,10 @@ body {
 } */
 
 .forgottenPassword {
+  color: #7198c4;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "Segoe UI";
   text-decoration: none;
 }
 
@@ -60,6 +71,13 @@ body {
 /* .formContainer {
    Kkeke 
  */
+
+.h3SignIn {
+  color: #707070;
+  font-weight: bold;
+  font-family: "Segoe UI";
+  font-size: 20px;
+}
 
 .headerHr {
   position: relative;
@@ -73,13 +91,15 @@ body {
 }
 
 .inputHeaders {
-  margin-right: 55%;
+  color: #4d4d4d;
+  margin-right: 52%;
 }
 
 .loginHr {
   margin-top: -5%;
   margin-left: 5%;
   width: 90%;
+  color: #707070;
 }
 
 label {
@@ -105,14 +125,15 @@ label {
 }
 
 .loginP {
-  padding-bottom: 5%;
+  margin-left: 15%;
+  width: 70%;
 }
 
 .logo {
   position: relative;
   margin-top: -25%;
   margin-bottom: 5%;
-  width: 40%;
+  width: 80%;
 }
 
 .parentDiv {

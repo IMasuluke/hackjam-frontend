@@ -8,5 +8,7 @@
   position: relative;
   left: 50%;
   transform: translate(-50%, 0%);
-  width: 20vw;
+  width: 30vw;
+  margin-top: -1%;
+  margin-bottom: -1%;
 }
