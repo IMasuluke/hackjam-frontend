@@ -5,6 +5,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ReturningStudentBar from "../ReturningStudentBar/ReturningStudentBar";
 import "./ReturningStudent.css";
+import CountryDropDown from "../../Components/CountryDropDown/CountryDropDown";
+import NextButton from "./NextButton";
+import CancelButton from "./CancelButton";
 
 class ReturningStudentWelcome2 extends Component {
   render() {
@@ -12,7 +15,194 @@ class ReturningStudentWelcome2 extends Component {
       <div>
         <div>
           <Header />
-          <ReturningStudentBar />
+
+          {/* ReturningStudentBar */}
+
+          <div className="BarDiv">
+            <div>
+              <label className="BarDivTextReturningStudent">
+                <h2 className="h2Size">Returning Student</h2>
+              </label>
+              <label className="BarDivTextStep">
+                <h2 className="h2Size">Step 2 of 4</h2>
+              </label>
+            </div>
+            <br />
+            <br />
+            <label className="HrBar hrBarHeavy">
+              <hr />
+            </label>
+            <label className="HrBar hrBarLight">
+              <hr />
+            </label>
+            <label className="HrBar">
+              <hr />
+            </label>
+            <label className="HrBar">
+              <hr />
+            </label>
+          </div>
+
+          {/* ReturningStudentBar */}
+
+          <div className="leftDiv">
+            <form className="ReturningStudentForm">
+              <h1 className="h1">Sponsor Details</h1>
+              <br />
+              <div>
+                <ul className="ReturningStudentList">
+                  <li>
+                    First Name:
+                    <input
+                      className="Left"
+                      type="text"
+                      // value={username}
+                      // onChange={this.handleUsernameChange}
+                    />
+                  </li>
+                  <br />
+
+                  <li>
+                    Surname:
+                    <input
+                      className=" Left"
+                      type="text"
+                      // value={username}
+                      // onChange={this.handleUsernameChange}
+                    />
+                  </li>
+                  <br />
+
+                  <li>
+                    Address Line 1:
+                    <input
+                      className=" Left"
+                      type="text"
+                      // value={username}
+                      // onChange={this.handleUsernameChange}
+                    />
+                  </li>
+                  <br />
+
+                  <li>
+                    Address Line 2:
+                    <input
+                      className=" Left"
+                      type="text"
+                      // value={username}
+                      // onChange={this.handleUsernameChange}
+                    />
+                  </li>
+                  <br />
+
+                  <li>
+                    <CountryDropDown />
+                  </li>
+                  <br />
+                  <br />
+                  <h1 className="h1 secondH1">
+                    Additional Contact Person / Next of Kin
+                  </h1>
+                  <br />
+                  <li>
+                    First Name:
+                    <input
+                      className=" Left"
+                      type="text"
+                      // value={username}
+                      // onChange={this.handleUsernameChange}
+                    />
+                  </li>
+                  <br />
+
+                  <li>
+                    Surname:
+                    <input
+                      className=" Left"
+                      type="text"
+                      // value={username}
+                      // onChange={this.handleUsernameChange}
+                    />
+                  </li>
+                </ul>
+              </div>
+            </form>
+          </div>
+          {/* Break between forms */}
+          <span>
+            <div className="rightDiv">
+              <form className="ReturningStudentForm">
+                <h1 className="H1Blank">Blank</h1>
+                <br />
+                <div>
+                  <ul className="ReturningStudentList">
+                    <li>State/Province: (Drop Down Pending)</li>
+                    <br />
+
+                    <li>
+                      Postal Code:
+                      <input
+                        className="returningStudentWelcomeInputBox Right"
+                        type="text"
+                        // value={username}
+                        // onChange={this.handleUsernameChange}
+                      />
+                    </li>
+                    <br />
+
+                    <li>
+                      Email Address:
+                      <input
+                        className="returningStudentWelcomeInputBox Right"
+                        type="text"
+                        // value={username}
+                        // onChange={this.handleUsernameChange}
+                      />
+                    </li>
+
+                    {/* Meant to be inline with first form */}
+
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <li>
+                      Email Address:
+                      <input
+                        className="returningStudentWelcomeInputBox Right"
+                        type="text"
+                        // value={username}
+                        // onChange={this.handleUsernameChange}
+                      />
+                    </li>
+                    <br />
+
+                    <li>
+                      Phone Number:
+                      <input
+                        className="returningStudentWelcomeInputBox Right"
+                        type="text"
+                        // value={username}
+                        // onChange={this.handleUsernameChange}
+                      />
+                    </li>
+                    <br />
+                    <br />
+                  </ul>
+                </div>
+              </form>
+            </div>
+          </span>
+        </div>
+        <div className="ReturningStudentWelcome2Buttons">
+          <label>
+            <NextButton />
+            <CancelButton />
+          </label>
         </div>
         <div>
           <Footer />
