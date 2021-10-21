@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import NextButton from "./NextButton";
+import CancelButton from "./CancelButton";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -16,18 +18,65 @@ class ReturningStudentWelcome1 extends Component {
       <div>
         <div>
           <Header />
-          <ReturningStudentBar />
+
+          {/* ReturningStudentBar */}
+
+          <div className="BarDiv">
+            <div>
+              <label className="BarDivTextReturningStudent">
+                <h2 className="h2Size">Returning Student</h2>
+              </label>
+              <label className="BarDivTextStep">
+                <h2 className="h2Size">Step 1 of 4</h2>
+              </label>
+            </div>
+            <br />
+            <br />
+
+            {/* Consider wrapping in div */}
+            <label className="HrBar hrBarLight">
+              <hr />
+            </label>
+            <label className="HrBar">
+              <hr />
+            </label>
+            <label className="HrBar">
+              <hr />
+            </label>
+            <label className="HrBar">
+              <hr />
+            </label>
+            {/* Consider wrapping in div */}
+          </div>
+
+          {/* ReturningStudentBar */}
         </div>
         <div className="leftDiv">
           <form className="ReturningStudentForm">
-            <h1>Update Personal Information</h1>
+            <h1 className="h1">Update Personal Information</h1>
             <br />
             <div>
               <ul className="ReturningStudentList">
-                <li>First Name:</li>
+                <li>
+                  First Name:
+                  <input
+                    className="returningStudentWelcomeInputBox"
+                    type="text"
+                    // value={username}
+                    // onChange={this.handleUsernameChange}
+                  />
+                </li>
                 <br />
                 <br />
-                <li>Surname:</li>
+                <li>
+                  Surname:
+                  <input
+                    className="returningStudentWelcomeInputBox"
+                    type="text"
+                    // value={username}
+                    // onChange={this.handleUsernameChange}
+                  />
+                </li>
                 <br />
                 <br />
                 <li>
@@ -76,14 +125,22 @@ class ReturningStudentWelcome1 extends Component {
         <span>
           <div className="rightDiv">
             <form className="ReturningStudentForm">
-              <h1>Update Personal Information</h1>
+              <h1 className="H1Blank">Blank</h1>
               <br />
               <div>
                 <ul className="ReturningStudentList">
                   <li>State/Province:</li>
                   <br />
                   <br />
-                  <li>Postal Code:</li>
+                  <li>
+                    Postal Code:
+                    <input
+                      className="returningStudentWelcomeInputBox"
+                      type="text"
+                      // value={username}
+                      // onChange={this.handleUsernameChange}
+                    />
+                  </li>
                   <br />
                   <br />
                   <li>
@@ -111,18 +168,13 @@ class ReturningStudentWelcome1 extends Component {
                   <br />
                 </ul>
                 <label>
-                  <button type="submit" className="nextButton">
-                    Next
-                  </button>
-                  <button type="submit" className="cancelButton">
-                    Cancel
-                  </button>
+                  <NextButton />
+                  <CancelButton />
                 </label>
               </div>
             </form>
           </div>
         </span>
-        {/* Break between forms */}
         <div>
           <Footer />
         </div>

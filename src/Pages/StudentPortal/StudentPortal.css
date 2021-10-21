@@ -13,15 +13,41 @@
   position: absolute;
 }
 
-.ParentCont {
-  background-color: rgba(255,255,255,1);
+.Parent {
+  background-color: rgba(255, 255, 255, 1);
+   width: 100%;
+    margin : 0;
+    padding: 0;
+}
+
+.Section {
+  align-content: center;
 }
 .Progress {
-  
-  width: 50px;
-  padding: 10px;
-  align-content: flex-end;
-  white-space: nowrap;
-
+  display: flex;
+  justify-content: flex-end;
+}
+.bar {
+  width: 20%;
 }
 
+.header {
+  color: white;
+  background-color: rgba(21, 48, 93, 1) !important;
+}
+
+hr {
+  height: 4px;
+  background-color: rgba(21, 48, 93, 1);
+  /* border: 0; */
+}
+
+.pics {
+  width: 309px;
+  height: 210px;
+  object-fit: cover;
+}
+
+.card {
+  margin-right: 5px;
+}

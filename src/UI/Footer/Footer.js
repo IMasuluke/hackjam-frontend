@@ -10,6 +10,7 @@ const Footer = () => {
         <div className="footerText">
           <label>
             <a
+              className="footerLink"
               href="https://mylmsft.institution.africa/login/index.php"
               target="_blank"
               style={{ color: "white" }}
@@ -19,6 +20,7 @@ const Footer = () => {
           </label>
           <label>
             <a
+              className="footerLink"
               href="https://mylmsft.institution.africa/login/index.php"
               target="_blank"
               style={{ color: "white" }}
@@ -28,6 +30,7 @@ const Footer = () => {
           </label>
           <label>
             <a
+              className="footerLink"
               href="https://mylmsft.institution.africa/login/index.php"
               target="_blank"
               style={{ color: "white" }}
@@ -37,6 +40,7 @@ const Footer = () => {
           </label>
           <label>
             <a
+              className="footerLink"
               href="https://mylmsft.institution.africa/login/index.php"
               target="_blank"
               style={{ color: "white" }}
@@ -46,6 +50,7 @@ const Footer = () => {
           </label>
           <label>
             <a
+              className="footerLink"
               href="https://mylmsft.institution.africa/login/index.php"
               target="_blank"
               style={{ color: "white" }}
@@ -55,6 +60,7 @@ const Footer = () => {
           </label>
           <label>
             <a
+              className="footerLink"
               href="https://mylmsft.institution.africa/login/index.php"
               target="_blank"
               style={{ color: "white" }}
@@ -64,6 +70,7 @@ const Footer = () => {
           </label>
           <label>
             <a
+              className="footerLink"
               href="https://mylmsft.institution.africa/login/index.php"
               target="_blank"
               style={{ color: "white" }}

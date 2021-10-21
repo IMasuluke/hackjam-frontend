@@ -11,3 +11,7 @@
   font-family: Arial;
   font-size: 10px;
 }
+
+.footerLink {
+  text-decoration: none;
+}

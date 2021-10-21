@@ -2,6 +2,11 @@ import React, { Component } from "react";
 
 import { Button,Container,Row, Col,Card, ListGroup, Carousel, CardGroup } from 'react-bootstrap';
 import { IoNewspaperOutline  } from "react-icons/io5";
+import covid from "../../Images/News/covidupdate.jpg";
+import academic from "../../Images/News/academic_success.jpg";
+import Career from "../../Images/Adverts/VirtualCareerAd.PNG";
+import "./StudentPortal.css";
+
 
 class NewsForm extends Component {
    
@@ -9,46 +14,43 @@ class NewsForm extends Component {
      render() {
          return (
              <div>
-                 <h3> <IoNewspaperOutline />Latest News | News </ h3>
+                 <h3> <IoNewspaperOutline />Latest News | <a href="/events" target="_blank" rel="noopener noreferre"> News </a> </ h3>
                 <CardGroup>
-                <Card>
-                    <Card.Img variant="top" src="holder.js/100px160" />
+                <Card className= "card">
+                    <Card.Img className="pics" variant="top" src={covid} />
                     <Card.Body>
-                    <Card.Title>Card title</Card.Title>
+                    <Card.Title>Covid Update</Card.Title>
                     <Card.Text>
                         This is a wider card with supporting text below as a natural lead-in to
                         additional content. This content is a little bit longer.
                     </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                    <small className="text-muted">Last updated 3 mins ago</small>
+                    <small className="text-muted"> 3 mins ago</small>
                     </Card.Footer>
                 </Card>
-                <Card>
-                    <Card.Img variant="top" src="holder.js/100px160" />
+                <Card className= "card">
+                    <Card.Img className="pics" variant="top" src={academic} />
                     <Card.Body>
-                    <Card.Title>Card title</Card.Title>
+                    <Card.Title>Academic Support | Block 4 </Card.Title>
                     <Card.Text>
-                        This card has supporting text below as a natural lead-in to additional
-                        content.{' '}
+                        Supplementary Assessments & Academic Support Webinar.{' '}
                     </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                    <small className="text-muted">Last updated 3 mins ago</small>
+                    <small className="text-muted"> 10 October 2021</small>
                     </Card.Footer>
                 </Card>
-                <Card>
-                    <Card.Img variant="top" src="holder.js/100px160" />
+                <Card className= "card">
+                    <Card.Img className="pics" variant="top" src={Career} />
                     <Card.Body>
-                    <Card.Title>Card title</Card.Title>
+                    <Card.Title>Career Fair (25-29 Oct)</Card.Title>
                     <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to
-                        show that equal height action.
+                        Register online for which session you would like to see 
                     </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                    <small className="text-muted">Last updated 3 mins ago</small>
+                    <small className="text-muted">10 October 2021</small>
                     </Card.Footer>
                 </Card>
                 </CardGroup>

@@ -9,10 +9,10 @@ const ReturningStudentBar = () => {
       <div className="BarDiv">
         <div>
           <label className="BarDivTextReturningStudent">
-            <h2>Returning Student</h2>
+            <h2 className="h2Size">Returning Student</h2>
           </label>
           <label className="BarDivTextStep">
-            <h2>Step 1 of 4</h2>
+            <h2 className="h2Size">Step 1 of 4</h2>
           </label>
         </div>
         <br />
