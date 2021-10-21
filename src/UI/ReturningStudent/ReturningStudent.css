@@ -1,3 +1,35 @@
+.arrowButton {
+  font-weight: bold;
+  font-size: 30px;
+  width: 10vw;
+  background-color: white;
+  color: #15305d;
+  border-color: #15305d;
+}
+
+.arrowButton:hover {
+  background-color: #15305d;
+  color: white;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.backButton {
+  font-weight: bold;
+  font-size: 30px;
+  width: 10vw;
+  background-color: white;
+  color: #15305d;
+  border-color: #15305d;
+}
+
+.backButton:hover {
+  background-color: #15305d;
+  color: white;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
 .buttonBegin {
   font-weight: bolder;
   height: 10%;
@@ -29,7 +61,28 @@
   text-decoration: none;
 }
 
+.costH1 {
+  text-align: right;
+}
+
+.declineButton {
+  font-size: 30px;
+  font-weight: bold;
+  width: 10vw;
+  background-color: white;
+  color: #fe0000;
+  border-color: #fe0000;
+}
+
+.declineButton:hover {
+  background-color: #fe0000;
+  color: white;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
 .h1 {
+  margin-left: 5%;
   font-family: "Arial";
   font-size: 30px;
   color: #707070;
@@ -72,8 +125,16 @@
   text-align: center;
 }
 
-.ReturningStudentForm {
+.ReturningStudentDiv {
+  background-color: #f6f6f6;
   margin-left: 5%;
+  margin-right: 5%;
+}
+
+.ReturningStudentDiv4 {
+  background-color: #f6f6f6;
+  margin-left: 5%;
+  margin-right: 20%;
 }
 
 .ReturningStudentList {
@@ -93,6 +154,25 @@
 
 .secondH1 {
   margin-left: -2vw;
+}
+
+.submitButton {
+  font-size: 30px;
+  font-weight: bold;
+  width: 10vw;
+  background-color: #15305d;
+  color: white;
+  border-color: #15305d;
+}
+
+.submitButton:hover {
+  background-color: #15305d;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.submitDeclineDiv {
+  margin-left: 5%;
 }
 
 .welcomeBack {

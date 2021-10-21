@@ -40,6 +40,39 @@ class ReturningStudentWelcome4 extends Component {
             </label>
           </div>
 
+          <h1 className="h1">Accept and Submit</h1>
+          <br />
+          <h1 className="h1">Review and submit module selections</h1>
+
+          <div className="ReturningStudentDiv4">
+            <label>
+              <h1 className="h1">Modules</h1>
+            </label>
+            <label className="costH1">
+              <h1 className="h1">Cost</h1>
+            </label>
+          </div>
+
+          <div className="submitDeclineDiv">
+            <label>
+              <button type="submit" className="submitButton">
+                Submit
+              </button>
+            </label>
+            <label>
+              <button type="submit" className="declineButton">
+                Decline
+              </button>
+            </label>
+            <label>
+              <button type="submit" className="backButton">
+                Back
+              </button>
+            </label>
+            <label>
+              <h2 type="submit">Cancel</h2>
+            </label>
+          </div>
           {/* ReturningStudentBar */}
         </div>
         <div>
