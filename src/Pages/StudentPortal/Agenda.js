@@ -10,7 +10,7 @@ class AgendaForm extends Component {
          return (
 
                     <Card style={{ width: '18rem' }}>
-                     <Card.Header className= "header" > <IoTodayOutline /> Agenda</Card.Header>
+                     <Card.Header className= "header" href="#"> <IoTodayOutline /> Agenda</Card.Header>
                     <Card.Body>
                        
                         <Card.Title> Today </Card.Title>

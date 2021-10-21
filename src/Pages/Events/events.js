@@ -4,6 +4,7 @@ import { Button,Container,Row, Col,Card, ListGroup, Carousel, CardGroup, Navbar,
 import { IoNewspaperOutline  } from "react-icons/io5";
 import Logo from "../../Images/Logos/Logo(Motto).png";
 import Career from "../../Images/Adverts/VirtualCareerAd.PNG";
+import "./event.css"
 
 
 
@@ -12,11 +13,11 @@ class EventsForm extends Component {
 
      render() {
          return (
-                    <Container fluid >
+                    <Container fluid className="Parent">
                       <Row> 
                           <Col>
                                 <Navbar bg="dark" variant="dark">
-                                    <Container>
+                                    <Container fluid className= "nav">
                                     <Navbar.Brand href="#home">
                                         <img
                                             src= {Logo}
@@ -39,15 +40,16 @@ class EventsForm extends Component {
                             </Col>
                         </Row>
 
-                         <Container fluid>
+                         <Container fluid className= "slide">
                              <Row>
-                                 <Col>
+                                 <Col className= "size">
                         <Carousel fade>
                             <Carousel.Item>
                                 <img
-                                className="d-block w-100"
+                                className="pic"
                                 src={Career}
                                 alt="First slide"
+                                variant="top"
                                 />
                                 <Carousel.Caption>
                                 <h3>First slide label</h3>
@@ -59,6 +61,7 @@ class EventsForm extends Component {
                                 className="d-block w-100"
                                 src="holder.js/800x400?text=Second slide&bg=282c34"
                                 alt="Second slide"
+                                variant="top"
                                 />
 
                                 <Carousel.Caption>
@@ -71,6 +74,7 @@ class EventsForm extends Component {
                                 className="d-block w-100"
                                 src="holder.js/800x400?text=Third slide&bg=20232a"
                                 alt="Third slide"
+                                variant="top"
                                 />
 
                                 <Carousel.Caption>
