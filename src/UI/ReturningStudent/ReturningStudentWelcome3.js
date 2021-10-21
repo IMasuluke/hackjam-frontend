@@ -39,9 +39,17 @@ class ReturningStudentWelcome3 extends Component {
               <hr />
             </label>
           </div>
-
-          {/* ReturningStudentBar */}
         </div>
+
+        {/* ReturningStudentBar */}
+
+        <h1 className="h1">Modules</h1>
+        <form className="ReturningStudentForm">
+          <h3 className="h3">Course History</h3>
+          <p>Qualification Name</p>
+          <h1>Bachelor of Science in Computer Science (dynamic)</h1>
+          <br />
+        </form>
         <div>
           <Footer />
         </div>
