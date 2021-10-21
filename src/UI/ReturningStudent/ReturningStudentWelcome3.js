@@ -5,6 +5,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ReturningStudentBar from "../ReturningStudentBar/ReturningStudentBar";
 import "./ReturningStudent.css";
+import NextButton from "./NextButton";
+import PastModulesForm from "./PastModulesForm";
+import EnrollingModulesForm from "./EnrollingModulesForm";
 
 class ReturningStudentWelcome3 extends Component {
   render() {
@@ -44,12 +47,22 @@ class ReturningStudentWelcome3 extends Component {
         {/* ReturningStudentBar */}
 
         <h1 className="h1">Modules</h1>
-        <form className="ReturningStudentForm">
+        <div className="ReturningStudentDiv">
           <h3 className="h3">Course History</h3>
           <p>Qualification Name</p>
           <h1>Bachelor of Science in Computer Science (dynamic)</h1>
           <br />
-        </form>
+
+          <PastModulesForm />
+          <br />
+          <br />
+          <EnrollingModulesForm />
+          <button className="arrowButton">←</button>
+          <NextButton />
+          <label>
+            <h2 type="submit">Cancel</h2>
+          </label>
+        </div>
         <div>
           <Footer />
         </div>
