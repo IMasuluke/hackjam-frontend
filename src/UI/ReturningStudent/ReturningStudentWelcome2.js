@@ -129,74 +129,76 @@ class ReturningStudentWelcome2 extends Component {
             </form>
           </div>
           {/* Break between forms */}
-          <span>
-            <div className="rightDiv">
-              <form className="ReturningStudentForm">
-                <h1 className="H1Blank">Blank</h1>
+
+          <div className="rightDiv">
+            <form className="ReturningStudentForm">
+              <h1 className="H1Blank">Blank</h1>
+              <br />
+              <ul className="ReturningStudentList">
+                <li>
+                  State/Province:{" "}
+                  <li>
+                    <CountryDropDown />
+                  </li>
+                </li>
                 <br />
-                <div>
-                  <ul className="ReturningStudentList">
-                    <li>State/Province: (Drop Down Pending)</li>
-                    <br />
 
-                    <li>
-                      Postal Code:
-                      <input
-                        className="returningStudentWelcomeInputBox Right"
-                        type="text"
-                        // value={username}
-                        // onChange={this.handleUsernameChange}
-                      />
-                    </li>
-                    <br />
+                <li>
+                  Postal Code:
+                  <input
+                    className="returningStudentWelcomeInputBox"
+                    type="text"
+                    // value={username}
+                    // onChange={this.handleUsernameChange}
+                  />
+                </li>
+                <br />
 
-                    <li>
-                      Email Address:
-                      <input
-                        className="returningStudentWelcomeInputBox Right"
-                        type="text"
-                        // value={username}
-                        // onChange={this.handleUsernameChange}
-                      />
-                    </li>
+                <li>
+                  Email Address:
+                  <input
+                    className="returningStudentWelcomeInputBox"
+                    type="text"
+                    // value={username}
+                    // onChange={this.handleUsernameChange}
+                  />
+                </li>
 
-                    {/* Meant to be inline with first form */}
+                {/* Meant to be inline with first form */}
 
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <li>
-                      Email Address:
-                      <input
-                        className="returningStudentWelcomeInputBox Right"
-                        type="text"
-                        // value={username}
-                        // onChange={this.handleUsernameChange}
-                      />
-                    </li>
-                    <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <li>
+                  Email Address:
+                  <input
+                    className="returningStudentWelcomeInputBox Right"
+                    type="text"
+                    // value={username}
+                    // onChange={this.handleUsernameChange}
+                  />
+                </li>
+                <br />
 
-                    <li>
-                      Phone Number:
-                      <input
-                        className="returningStudentWelcomeInputBox Right"
-                        type="text"
-                        // value={username}
-                        // onChange={this.handleUsernameChange}
-                      />
-                    </li>
-                    <br />
-                    <br />
-                  </ul>
-                </div>
-              </form>
-            </div>
-          </span>
+                <li>
+                  Phone Number:
+                  <input
+                    className="returningStudentWelcomeInputBox Right"
+                    type="text"
+                    // value={username}
+                    // onChange={this.handleUsernameChange}
+                  />
+                </li>
+                <br />
+                <br />
+              </ul>
+            </form>
+          </div>
         </div>
         <div className="ReturningStudentWelcome2Buttons">
           <label>

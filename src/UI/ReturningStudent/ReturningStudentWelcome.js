@@ -13,15 +13,24 @@ const WelcomeBack = () => {
       </div>
       <div className="welcomeBack">
         <div className="welcomeBackBox">
-          <h2>Welcome Back</h2>
+          <h2 className="welcomeBackTitle">Welcome Back</h2>
           <br />
-          <p>
+          <p className="welcomeBackParagraph">
             Let’s get you up and running again! Your education plans and goals
             are just a few steps away. We just need some updated information and
             a few questions answered.
             <br />
             <br />
-            We are here to help. Contact us if you have any questions.
+            We are here to help.{" "}
+            <a
+              className="contactUs"
+              href="https://mylmsft.institution.africa/login/index.php"
+              target="_blank"
+              style={{ color: "#318EF8" }}
+            >
+              Contact us
+            </a>{" "}
+            if you have any questions.
           </p>
           <br />
           <button className="buttonBegin">
