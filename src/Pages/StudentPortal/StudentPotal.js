@@ -24,7 +24,7 @@ class StudentPortalForm extends Component {
 
      render() {
          return (
-              <Container fluid className= "ParentCont">
+              <Container fluid className= "Parent">
                   
                  <Header/> <br />
                         <Container fluid className= "PorgressBar">
@@ -62,7 +62,7 @@ class StudentPortalForm extends Component {
                                                         <hr />
                                                         </Card.Text>
                                                             2021 Enrollement is now open.<br />
-                                                        <Button variant="danger">Enrollment</Button>
+                                                        <Button variant="danger" href= "/ReturningStudentWelcome">Enrollment</Button>
                                                     </Card.Body>
                                              </Card>
                                         </Col>
@@ -101,13 +101,14 @@ class StudentPortalForm extends Component {
                                         <Col>
                                             <Card style={{ width: '18rem' }}>
                                                         <Card.Header className= "header"> <IoMdSchool/> My Module</Card.Header>
-                                                        <ListGroup variant="flush">
-                                                            <ListGroup.Item href="#/keke1">
-                                                             Computer Science
-
-                                                            </ListGroup.Item>
-                                                        </ListGroup>
-                                                        <Card.Body><mdStars/></Card.Body> 
+                                                        <Card.Body>
+                                                            <Card.Text>
+                                                             <p> Computer Science <a href="https://mylmsft.institution.africa/login/index.php" />
+                                                            </p>
+                                                            <mdStars/>
+                                                            </Card.Text>
+                                                        
+                                                        </Card.Body> 
                                             </Card>
                                         </Col>
                                     </Row>
