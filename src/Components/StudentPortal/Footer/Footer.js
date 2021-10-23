@@ -8,8 +8,8 @@ import "./Footer.css";
 class FooterForm extends Component {
     render (){
     return (
-        <Container className= "Footer" fluid>
-            <Row>
+        <Container  fluid>
+            <Row className= "Footer">
                     <Col className= "Contactus">
                       <h3>Contact Us </h3> <br />
                         <h4>+27 11 341 4569</h4>
@@ -33,12 +33,12 @@ class FooterForm extends Component {
                         <h3>Follow us on Social Media</h3> <br />
                         <Row className= "Icons">
                             <Col>
-                            <BsInstagram/>
+                            <BsInstagram href= "/ReturningStudentWelcome" target="_blank" rel="noopener noreferre" />
                             </Col> 
-                            <Col><BsTwitter/>
+                            <Col><BsTwitter href= "/ReturningStudentWelcome" target="_blank" rel="noopener noreferre"/>
                             </Col>
                             <Col>
-                            <BsFacebook/>
+                            <BsFacebook href= "/ReturningStudentWelcome" target="_blank" rel="noopener noreferre"/>
                             </Col>
                         </Row>
                         <Row>
@@ -47,9 +47,7 @@ class FooterForm extends Component {
                             </Col>
                         </Row>
                     </Col>
-                    <Col xs= {9}>
-                        Yes
-                    </Col>
+                    
                 </Row>
                  
         
