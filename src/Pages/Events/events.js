@@ -4,7 +4,9 @@ import { Button,Container,Row, Col,Card, ListGroup, Carousel, CardGroup, Navbar,
 import { IoNewspaperOutline  } from "react-icons/io5";
 import Logo from "../../Images/Logos/Logo(Motto).png";
 import Career from "../../Images/Adverts/VirtualCareerAd.PNG";
-import "./event.css"
+import Wellness from "../../Images/Events/studentwellness.jpg";
+import "./event.css";
+import Footer from "../../Components/StudentPortal/Footer/Footer";
 
 
 
@@ -16,7 +18,7 @@ class EventsForm extends Component {
                     <Container fluid className="Parent">
                       <Row> 
                           <Col>
-                                <Navbar bg="dark" variant="dark">
+                                <Navbar bg="dark" variant="dark" sticky= "top">
                                     <Container fluid className= "nav">
                                     <Navbar.Brand href="#home">
                                         <img
@@ -42,7 +44,7 @@ class EventsForm extends Component {
 
                          <Container fluid className= "slide">
                              <Row>
-                                 <Col className= "size">
+                                 <Col >
                         <Carousel fade>
                             <Carousel.Item>
                                 <img
@@ -58,8 +60,8 @@ class EventsForm extends Component {
                             </Carousel.Item>
                             <Carousel.Item>
                                 <img
-                                className="d-block w-100"
-                                src="holder.js/800x400?text=Second slide&bg=282c34"
+                                className="pic"
+                                src= {Wellness}
                                 alt="Second slide"
                                 variant="top"
                                 />
@@ -71,7 +73,7 @@ class EventsForm extends Component {
                             </Carousel.Item>
                             <Carousel.Item>
                                 <img
-                                className="d-block w-100"
+                                className="pic"
                                 src="holder.js/800x400?text=Third slide&bg=20232a"
                                 alt="Third slide"
                                 variant="top"
@@ -83,10 +85,40 @@ class EventsForm extends Component {
                                 </Carousel.Caption>
                             </Carousel.Item>
                             </Carousel>
+                            <br />
                              </Col>
                          </Row>
-                        </Container>
+                         
+                        </Container>   
+                            
+                        < Container className= "size">
                         
+                           <Row xs={1} md={4} className="g-4">
+                                {Array.from({ length: 8 }).map((_, idx) => (
+                                    <Col>
+                                    <Card
+                                    //  bg="dark" variant="dark"text= 'white'
+                                    >
+                                        <Card.Img variant="top" src= {Career} />
+                                        <Card.Body>
+                                        <Card.Title>Card title</Card.Title>
+                                        <Card.Text>
+                                            This is a longer card with supporting text below as a natural
+                                            lead-in to additional content. This content is a little bit longer.
+                                        </Card.Text>
+                                        </Card.Body>
+                                        <Card.Footer>
+                                            10 Mins ago
+                                        </Card.Footer>
+                                    </Card>
+                                    </Col>
+                                ))}
+                            </Row> 
+                        
+
+                        </Container>
+                         <br />                            
+                       <Footer/>  
                     </Container>
 
                    

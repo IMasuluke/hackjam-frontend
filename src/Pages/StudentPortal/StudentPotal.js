@@ -7,7 +7,7 @@ import { Button,Container,Row, Col, Image, Nav, ProgressBar,Card, ListGroup, Car
 import "./StudentPortal.css";
 import YoutubeEmbed from "./YoutubeEmbed";
 import {   MdLocalMovies} from "react-icons/md";
-import {  ImLink} from "react-icons/im";
+import {  ImLink, ImArrowRight2} from "react-icons/im";
 import {   IoMdSchool} from "react-icons/io";
 import Progress from "./ProgressBar";
 import News from "./News";
@@ -62,7 +62,7 @@ class StudentPortalForm extends Component {
                                                         <hr />
                                                         </Card.Text>
                                                             2021 Enrollement is now open.<br />
-                                                        <Button variant="danger" href= "/ReturningStudentWelcome">Enrollment</Button>
+                                                        <Button variant="danger" href= "/ReturningStudentWelcome" target="_blank" rel="noopener noreferre">Enrollment</Button>
                                                     </Card.Body>
                                              </Card>
                                         </Col>
@@ -76,6 +76,7 @@ class StudentPortalForm extends Component {
                                                <h3> <MdLocalMovies />
                                                  Now Playing </h3>
                                             <YoutubeEmbed embedId="S_e66j1NFMo" />
+                                            <a href="/#" target="_blank" rel="noopener noreferre"> More Videos like this <ImArrowRight2 /> </a>
                                             </Col>
                                         </Row>
                                         <Row>
@@ -96,19 +97,17 @@ class StudentPortalForm extends Component {
                                     </Row>
                                 </Col>
 
-                                <Col className= "Section"> 
+                                <Col className= "Section" xs="auto" > 
                                     <Row>
                                         <Col>
                                             <Card style={{ width: '18rem' }}>
                                                         <Card.Header className= "header"> <IoMdSchool/> My Module</Card.Header>
-                                                        <Card.Body>
-                                                            <Card.Text>
-                                                             <p> Computer Science <a href="https://mylmsft.institution.africa/login/index.php" />
-                                                            </p>
-                                                            <mdStars/>
-                                                            </Card.Text>
-                                                        
-                                                        </Card.Body> 
+                                                        <ListGroup variant="flush">
+                                                            <ListGroup.Item action href="https://mylmsft.institution.africa/login/index.php" target="_blank" rel="noopener noreferre">
+                                                             Computer Science
+                                                               <mdStars/> 
+                                                            </ListGroup.Item>
+                                                      </ ListGroup>
                                             </Card>
                                         </Col>
                                     </Row>
@@ -120,7 +119,7 @@ class StudentPortalForm extends Component {
                                     </Row>
                                         <hr/>
                                     <Row>
-                                        <Col>
+                                        <Col className= "adblock">
                                         
                                           <Ads />  
                                         </Col>

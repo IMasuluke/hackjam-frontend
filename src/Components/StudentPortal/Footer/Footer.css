@@ -1,35 +1,35 @@
-body {
+/* body {
   font-family: "Segoe Ui" !important;
   font-size: 18px;
   color: black;
-}
+} */
 
 .Footer {
-  display: flex;
-  flex-direction: row;
+  /* display: flex; */
+  /* flex-direction: row; */
   background-color: rgba(21, 48, 93, 1);
   width: 100%;
-  height: 150px;
+  /* height: 150px; */
   
 }
 .QuickLinks {
   padding-top: 20pt;
-  text-align: left;
+  
   color: rgb(255, 255, 255);
   /* height: 200px; */
-  text-align: left;
-  font-family: Arial;
+  
+  
   /* font-style: normal; */
   /* font-weight: bold; */
   font-size: 7px;
 }
 .FollowUs {
   padding-top: 20pt;
-  text-align: left;
+  
   color: white;
   /* height: 200px; */
-  text-align: left;
-  font-family: Arial;
+  
+  
   /* font-style: normal; */
   /* font-weight: bold; */
   font-size: 7px;
@@ -37,25 +37,25 @@ body {
 
 .FindUs {
   padding-top: 20pt;
-  text-align: left;
+  
   color: white;
   /* height: 200px; */
   text-align: left;
-  font-family: Arial;
+  
   /* font-style: normal; */
   /* font-weight: bold; */
-  font-size: 7px;
+  
 }
 .Contactus {
   padding-top: 20pt;
   padding-left: 20pt;
   color: white;
   /* height: 200px; */
-  text-align: left;
-  font-family: Arial;
+  
+ 
   /* font-style: normal; */
   /* font-weight: bold; */
-  font-size: 7px;
+  
 }
 
 .Icons {
