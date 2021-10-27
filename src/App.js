@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Router, Switch, Route, Link } from "react-router-dom";
 import WelcomeBack from "./UI/ReturningStudent/ReturningStudentWelcome";
 import LogInForm from "./UI/Login/Login";
-import StudentAdvisorProfile from "./UI/StudentAdvisorProfile/StudentAdvisorProfile";
 import ReturningStudentBar from "./UI/ReturningStudentBar/ReturningStudentBar";
 import ReturningStudentWelcome1 from "./UI/ReturningStudent/ReturningStudentWelcome1";
 import ReturningStudentWelcome2 from "./UI/ReturningStudent/ReturningStudentWelcome2";
@@ -42,12 +41,6 @@ export default function App() {
           path="/ReturningStudentBar"
           component={ReturningStudentBar}
         />
-        <Route
-          exact
-          path="/StudentAdvisorProfile"
-          component={StudentAdvisorProfile}
-        />
-
         <Route exact path="/StudentPortal" component={StudentPortalForm} />
         <Route exact path="/CountryDropDown" component={CountryDropDown} />
       </Switch>
