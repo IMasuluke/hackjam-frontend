@@ -23,7 +23,7 @@ class HeaderForm extends Component {
                     </Col>
                 </Row>
             
-            <Navbar bg="light" variant="light">
+            <Navbar collapseOnSelect expand="lg" bg="light" variant="light" sticky="top">
                 <Container fluid ClassName= "NavBar">
                     <Row>
                         <Col>                     
@@ -39,6 +39,8 @@ class HeaderForm extends Component {
                         </Col>
 
                             <Col>
+                             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                              <Navbar.Collapse id="responsive-navbar-nav">
                                 <Nav className="me-auto">
                                     {/* Subject to change */}
                                     
@@ -49,7 +51,7 @@ class HeaderForm extends Component {
                                         <NavDropdown.Item href="#action/3.1">Student Accommodation </NavDropdown.Item>
                                     </NavDropdown>
                                     <NavDropdown title= "Finances" id= "NavDropFinances">
-                                        <NavDropdown.Item href="#action/3.1"> Student Account </NavDropdown.Item>
+                                        <NavDropdown.Item href="/finance" target="_blank" rel="noopener noreferre"> Student Account </NavDropdown.Item>
                                         <NavDropdown.Item href="#action/3.2">Make Payment</NavDropdown.Item>
                                         <NavDropdown.Item href="#action/3.3">Finance Department</NavDropdown.Item>
                                         <NavDropdown.Divider />
@@ -78,15 +80,17 @@ class HeaderForm extends Component {
                                     {/* <Nav.Link href="#pricing">Support</Nav.Link> */}
                                 </Nav>
                                     {/* <Navbar.Collapse>< BiSearch/></Navbar.Collapse> */}
-                                    
+                                <Nav placement="end">    
                                 
                                     
-                        </Col>
-                        <Col className="Search">
+                        
+                        
                             <BiSearch />
                             <CgProfile/>
+                        
+                                </Nav>
+                               </Navbar.Collapse> 
                         </Col>
-
                     </Row>
                    
                 </Container>

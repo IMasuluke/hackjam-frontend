@@ -15,9 +15,9 @@
 
 .Parent {
   background-color: rgba(255, 255, 255, 1);
-   width: 100%;
-    margin : 0;
-    padding: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .Section {
@@ -37,17 +37,28 @@
 }
 
 hr {
+  /* width: 18rem; */
   height: 4px;
   background-color: rgba(21, 48, 93, 1);
   /* border: 0; */
 }
 
 .pics {
-  width: 309px;
+  width: 100%;
   height: 210px;
   object-fit: cover;
 }
 
 .card {
   margin-right: 5px;
+}
+.ad {
+  width: 18rem;
+  height: 100%;
+  object-fit: cover;
+}
+.adblock {
+  height: 300px;
+  width: 18rem;
+  align-content: center;
 }

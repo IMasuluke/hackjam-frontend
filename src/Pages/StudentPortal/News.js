@@ -14,12 +14,13 @@ class NewsForm extends Component {
      render() {
          return (
              <div>
-                 <h3> <IoNewspaperOutline />Latest News | <a href="/events" target="_blank" rel="noopener noreferre"> News </a> </ h3>
+                 <h3> <IoNewspaperOutline />Latest News | <a href="/events" target="_blank" rel="noopener noreferre"> News </a> </ h3> <hr />
                 <CardGroup>
                 <Card className= "card">
                     <Card.Img className="pics" variant="top" src={covid} />
                     <Card.Body>
                     <Card.Title>Covid Update</Card.Title>
+                    <hr />
                     <Card.Text>
                         This is a wider card with supporting text below as a natural lead-in to
                         additional content. This content is a little bit longer.
@@ -33,6 +34,7 @@ class NewsForm extends Component {
                     <Card.Img className="pics" variant="top" src={academic} />
                     <Card.Body>
                     <Card.Title>Academic Support | Block 4 </Card.Title>
+                    <hr />
                     <Card.Text>
                         Supplementary Assessments & Academic Support Webinar.{' '}
                     </Card.Text>
@@ -45,6 +47,7 @@ class NewsForm extends Component {
                     <Card.Img className="pics" variant="top" src={Career} />
                     <Card.Body>
                     <Card.Title>Career Fair (25-29 Oct)</Card.Title>
+                    <hr />
                     <Card.Text>
                         Register online for which session you would like to see 
                     </Card.Text>
