@@ -163,7 +163,8 @@ class ReturningStudentWelcome2 extends Component {
                     // onChange={this.handleUsernameChange}
                   />
                 </li>
-
+                <br />
+                <input type="checkbox" className="checkBox2" />
                 {/* Meant to be inline with first form */}
 
                 <br />

@@ -1,5 +1,5 @@
 .arrowButton {
-  font-weight: bold;
+  margin-left: 2vw;
   font-size: 30px;
   width: 10vw;
   background-color: white;
@@ -34,10 +34,25 @@
   font-weight: bolder;
   height: 10%;
   opacity: 100%;
-  border-color: #707070;
   width: 20%;
-  background-color: #1c4285;
+  background-color: #15305d;
   color: white;
+  border-color: #15305d;
+}
+
+.buttonBegin:hover {
+  border-color: white;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.buttonsDiv {
+  margin-bottom: -25%;
+  padding-bottom: 10vh;
+}
+
+.cancelButtonLabel {
+  margin-left: 2vw;
 }
 
 .cancelButton {
@@ -55,6 +70,12 @@
   color: white;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.checkBox2 {
+  height: 3vh;
+  width: 3vw;
+  margin-left: -2.5%;
 }
 
 .contactUs {
@@ -81,12 +102,31 @@
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.dynamicH1 {
+  font-family: "Arial";
+  font-size: 30px;
+  color: #707070;
+  font-weight: bold;
+}
+
+.dynamicH1Label {
+  margin-left: 15%;
+}
+
 .h1 {
   margin-left: 5%;
   font-family: "Arial";
   font-size: 30px;
   color: #707070;
   font-weight: 200;
+}
+
+.h3 {
+  margin-left: 2.5%;
+  font-family: "Arial";
+  font-size: 30px;
+  color: #707070;
+  font-weight: bold;
 }
 
 .H1Blank {
@@ -107,6 +147,7 @@
 }
 
 .nextButton {
+  margin-left: 2vw;
   font-size: 30px;
   font-weight: bold;
   width: 10vw;
@@ -116,9 +157,21 @@
 }
 
 .nextButton:hover {
+  border-color: white;
   background-color: #15305d;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.qualificationName {
+  font-family: "Arial";
+  font-size: 20px;
+  color: #707070;
+  font-weight: 150;
+}
+
+.qualificationNameLabel {
+  margin-left: 2.5%;
 }
 
 .ReturningStudentWelcome2Buttons {
@@ -126,6 +179,8 @@
 }
 
 .ReturningStudentDiv {
+  padding-top: 2.5%;
+  margin-top: 2.5%;
   background-color: #f6f6f6;
   margin-left: 5%;
   margin-right: 5%;
@@ -166,6 +221,7 @@
 }
 
 .submitButton:hover {
+  border-color: white;
   background-color: #15305d;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;

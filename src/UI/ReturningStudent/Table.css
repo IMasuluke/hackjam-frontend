@@ -1,0 +1,73 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+}
+
+.costTotal {
+  width: 20vw;
+  margin-left: 4vw;
+  height: 7vh;
+}
+
+.costTotalDiv {
+  margin-left: 45vw;
+}
+
+.courseFeeData {
+  border-bottom: 1px solid #ffffff;
+  text-align: left;
+  padding: 8px;
+  font-size: 32px;
+}
+
+.courseFeeText {
+  font-family: "Arial";
+  color: #707070;
+  font-weight: bold;
+}
+
+.headerText {
+  font-family: "Arial";
+  color: #707070;
+  font-weight: 200;
+}
+
+.modulesCol {
+  padding-bottom: -2vh;
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  font-family: "Arial";
+  border-bottom: 1px solid #ffffff;
+  text-align: left;
+  padding: 8px;
+  font-size: 32px;
+}
+
+td {
+  border-color: #707070;
+  background-color: white;
+}
+
+form {
+  display: flex;
+  gap: 5px;
+}
+
+form td:last-child {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form * {
+  font-size: 28px;
+}

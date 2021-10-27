@@ -6,8 +6,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import ReturningStudentBar from "../ReturningStudentBar/ReturningStudentBar";
 import "./ReturningStudent.css";
 import NextButton from "./NextButton";
-import PastModulesForm from "./PastModulesForm";
-import EnrollingModulesForm from "./EnrollingModulesForm";
+import PastModulesTable from "./PastModulesTable";
+import EnrollingModulesTable from "./EnrollingModulesTable";
 
 class ReturningStudentWelcome3 extends Component {
   render() {
@@ -49,19 +49,34 @@ class ReturningStudentWelcome3 extends Component {
         <h1 className="h1">Modules</h1>
         <div className="ReturningStudentDiv">
           <h3 className="h3">Course History</h3>
-          <p>Qualification Name</p>
-          <h1>Bachelor of Science in Computer Science (dynamic)</h1>
-          <br />
-
-          <PastModulesForm />
-          <br />
-          <br />
-          <EnrollingModulesForm />
-          <button className="arrowButton">←</button>
-          <NextButton />
-          <label>
-            <h2 type="submit">Cancel</h2>
+          <label className="qualificationNameLabel">
+            <p className="qualificationName">Qualification Name</p>
           </label>
+          <label className="dynamicH1Label">
+            <h1 className="dynamicH1">
+              Bachelor of Science in Computer Science (dynamic)
+            </h1>
+          </label>
+          <br />
+          <br />
+          <PastModulesTable />
+          <br />
+          <br />
+          <EnrollingModulesTable />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <div className="buttonsDiv">
+            <button className="arrowButton">←</button>
+            <NextButton />
+            <label className="cancelButtonLabel">
+              <h2 type="submit">Cancel</h2>
+            </label>
+          </div>
         </div>
         <div>
           <Footer />
