@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button,Container, Row, Col,Card, ListGroup ,CardGroup } from 'react-bootstrap';
 import Health from "../../Images/Support/Technology_tools.png";
-import Tutoring from "../../Images/Adverts/Tutoring.jpg";
-import Campus from "../../Images/EduvosLogo(Blue).png";
+import Tech from "../../Images/Support/per-strategy.png";
+import Study from "../../Images/Support/studying.jpg";
+import "./StudentPortal.css";
 
 
 class CardForms extends Component {
@@ -13,36 +14,35 @@ class CardForms extends Component {
                 <div>
                  <h3> Additional </ h3>
                 <CardGroup>
-                <Card>
-                    <Card.Header>Health & Wellbeing</Card.Header>
-                    <Card.Img variant="top" src={Health} />
+                <Card className= "card" >
+                    <Card.Header className= "header">Health & Wellbeing</Card.Header>
+                    <Card.Img className= "pics" variant="top" src={Health} />
                     <Card.Body>
-                    <Card.Link>Safet on Campus</ Card.Link> <br />
-                    <Card.Link>School Clince</ Card.Link> <br />
-                    <Card.Link>Counselling Services</ Card.Link>
+                    <Card.Link href="#">Safet on Campus</ Card.Link> <br />
+                    <Card.Link href="#" >School Clince</ Card.Link> <br />
+                    <Card.Link href="#">Counselling Services</ Card.Link>
                     </Card.Body>
                    
                 </Card>
-                <Card>
-                    <Card.Img variant="top" src="holder.js/100px160" />
+                <Card className= "card">
+                     <Card.Header className= "header">Technology Tools </Card.Header>
+                    <Card.Img className= "pics" variant="top" src={Tech} />
                     <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                    <Card.Text>
-                        This card has supporting text below as a natural lead-in to additional
-                        content.{' '}
-                    </Card.Text>
+                        <Card.Link href="#">Office 365</ Card.Link> <br />
+                         <Card.Link href="#">Wi-Fi Setup</ Card.Link> <br />
+                        <Card.Link href="#" >Student Hub Training</ Card.Link> <br />
+                        <Card.Link href="#"> Printing </ Card.Link>
                     </Card.Body>
                     
                 </Card>
-                <Card>
-                    <Card.Img variant="top" src="holder.js/100px160" />
+                <Card className= "card">
+                     <Card.Header className= "header">Study Related</Card.Header>
+                    <Card.Img className= "pics" variant="top" src={Study} dimension= "width"/>
                     <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                    <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to
-                        show that equal height action.
-                    </Card.Text>
+                        <Card.Link href="#">Rules and Syllabuses </ Card.Link> <br />
+                        <Card.Link href="#" >Textbook List</ Card.Link> <br />
+                        <Card.Link href="#">Turnit in</ Card.Link> <br />
+                         <Card.Link href="#">Plagiarism</ Card.Link>
                     </Card.Body>
                     
                 </Card>

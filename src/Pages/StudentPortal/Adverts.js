@@ -3,16 +3,17 @@ import {  Col,Card, ListGroup, Carousel } from 'react-bootstrap';
 import Career from "../../Images/Adverts/VirtualCareerAd.PNG";
 import Tutoring from "../../Images/Adverts/Tutoring.jpg";
 import Campus from "../../Images/EduvosLogo(Blue).png";
+import "./StudentPortal.css";
 
 class AdvertForm extends Component {
    
      render() {
          return (
 
-                    <Carousel>
+                    <Carousel  >
                             <Carousel.Item>
                                 <img
-                                className="d-block w-100"
+                            className="ad"
                                 src={Tutoring}
                                 alt="Tutoring"
                                 />
@@ -20,7 +21,7 @@ class AdvertForm extends Component {
                             </Carousel.Item>
                             <Carousel.Item>
                                 <img
-                                className="d-block w-100"
+                                className="ad"
                                 src={Career}
                                 alt="Career Fair"
                                 />
@@ -28,7 +29,7 @@ class AdvertForm extends Component {
                             </Carousel.Item>
                             <Carousel.Item>
                                 <img
-                                className="d-block w-100"
+                                    className="ad"
                                 src={Campus}
                                 alt="Third slide"
                                 />
