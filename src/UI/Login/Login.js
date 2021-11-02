@@ -85,7 +85,7 @@ class LogInForm extends Component {
               </div>
 
               <br />
-              <br />
+
               <p>
                 <a
                   className="forgottenPassword"

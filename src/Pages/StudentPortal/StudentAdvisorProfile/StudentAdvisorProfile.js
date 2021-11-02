@@ -3,7 +3,18 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./StudentAdvisorProfile.css";
 
-import { Button,Container, Modal ,Row, Col, Image, Nav,Card, ListGroup, Carousel } from 'react-bootstrap';
+import {
+  Button,
+  Container,
+  Modal,
+  Row,
+  Col,
+  Image,
+  Nav,
+  Card,
+  ListGroup,
+  Carousel,
+} from "react-bootstrap";
 
 //class StudentAdvisorProfile extends Component {
 //   constructor(props) {
@@ -28,7 +39,7 @@ import { Button,Container, Modal ,Row, Col, Image, Nav,Card, ListGroup, Carousel
 // st StudentAdvisorProconfile = () => {
 //   return (
 //     // <div>
-    
+
 //     //   <div>
 //     //     <h1 className="SAPH1">Student Advisor</h1>
 //     //     <ul className="SAPList">
@@ -47,7 +58,7 @@ import { Button,Container, Modal ,Row, Col, Image, Nav,Card, ListGroup, Carousel
 //     // </div>
 //     <Container>
 //       <Row>
-        
+
 //       </Row>
 //     </Container>
 //   );
@@ -84,7 +95,5 @@ import { Button,Container, Modal ,Row, Col, Image, Nav,Card, ListGroup, Carousel
 // }
 
 // render(<Example />);
-
-
 
 //export default StudentAdvisorProfile;

@@ -33,9 +33,7 @@ const WelcomeBack = () => {
             if you have any questions.
           </p>
           <br />
-          <button className="buttonBegin">
-            <h2>Begin</h2>
-          </button>
+          <button className="buttonBegin">Begin</button>
         </div>
       </div>
       <div>

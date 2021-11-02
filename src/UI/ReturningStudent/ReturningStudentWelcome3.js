@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import DynamicCourseTitle from "./DynamicCourseTitle";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -54,7 +55,7 @@ class ReturningStudentWelcome3 extends Component {
           </label>
           <label className="dynamicH1Label">
             <h1 className="dynamicH1">
-              Bachelor of Science in Computer Science (dynamic)
+              <DynamicCourseTitle />
             </h1>
           </label>
           <br />
@@ -71,10 +72,20 @@ class ReturningStudentWelcome3 extends Component {
           <br />
           <br />
           <div className="buttonsDiv">
-            <button className="arrowButton">←</button>
-            <NextButton />
-            <label className="cancelButtonLabel">
-              <h2 type="submit">Cancel</h2>
+            <label>
+              <button type="submit" className="arrowButton">
+                ←
+              </button>
+            </label>
+            <label>
+              <button type="submit" className="nextButton">
+                Next
+              </button>
+            </label>
+            <label>
+              <button type="submit" className="cancelButton">
+                Cancel
+              </button>
             </label>
           </div>
         </div>
