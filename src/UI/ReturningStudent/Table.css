@@ -6,12 +6,14 @@
 }
 
 .costTotal {
+  font-size: 120%;
   width: 20vw;
-  margin-left: 4vw;
+  margin-left: 1.45vw;
   height: 7vh;
 }
 
 .costTotalDiv {
+  margin-top: -0.55%;
   margin-left: 45vw;
 }
 
@@ -19,7 +21,6 @@
   border-bottom: 1px solid #ffffff;
   text-align: left;
   padding: 8px;
-  font-size: 32px;
 }
 
 .courseFeeText {
@@ -50,7 +51,7 @@ td {
   border-bottom: 1px solid #ffffff;
   text-align: left;
   padding: 8px;
-  font-size: 32px;
+  font-size: 120%;
 }
 
 td {

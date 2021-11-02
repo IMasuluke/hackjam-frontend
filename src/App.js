@@ -55,7 +55,6 @@ export default function App() {
         <Route exact path="/Portal" component={StudentPortalForm} />
         <Route exact path="/events" component={EventsForm} />
         <Route exact path="/finance" component={Finance} />
-
         <Route exact path="/StudentPortal" component={StudentPortalForm} />
         <Route exact path="/CountryDropDown" component={CountryDropDown} />
       </Switch>

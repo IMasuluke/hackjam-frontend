@@ -3,28 +3,28 @@
     "id": 1,
     "EnrollingModules": "Data Structures and Algorithms in C#",
     "ModuleCode": "ITDCA2-B44",
-    "Check": "*Checkbox pending*",
+
     "Price": "R 7,384.92"
   },
   {
     "id": 2,
     "EnrollingModules": "Database Management System",
     "ModuleCode": "ITDIB2-B44",
-    "Check": "*Checkbox pending*",
+
     "Price": "R 7,384.92"
   },
   {
     "id": 3,
     "EnrollingModules": "IT Project Management",
     "ModuleCode": "ITPMA2-B33",
-    "Check": "*Checkbox pending*",
+
     "Price": "R 7,384.92"
   },
   {
     "id": 4,
     "EnrollingModules": "Data Science",
     "ModuleCode": "ITDSB2-B33",
-    "Check": "*Checkbox pending*",
+
     "Price": "R 7,384.92"
   }
 ]

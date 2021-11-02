@@ -67,7 +67,9 @@ class ReturningStudentWelcome4 extends Component {
               </button>
             </label>
             <label>
-              <h2 type="submit">Cancel</h2>
+              <button type="submit" className="cancelButton">
+                Cancel
+              </button>
             </label>
           </div>
           {/* ReturningStudentBar */}

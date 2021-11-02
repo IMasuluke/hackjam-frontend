@@ -1,8 +1,22 @@
 import React, { useState } from "react";
 import data from "./Mock-data(PastModulesTable).json";
+import "./ReturningStudent.css";
 
 const PastModulesTable = () => {
   const [contacts, setContacts] = useState(data);
+
+  const importedData = (grade) => {
+    let result = "";
+    if (grade === "P") {
+      result = "pass";
+    } else if (grade === "P*") {
+      result = "passWithDistinction";
+    } else if (grade === "F") {
+      result = "fail";
+    }
+
+    return <h1 className={result}>{grade}</h1>;
+  };
 
   return (
     <div>
@@ -20,7 +34,7 @@ const PastModulesTable = () => {
               <tr>
                 <td>{details.PastModule}</td>
                 <td>{details.ModuleCode}</td>
-                <td>{details.Grade}</td>
+                <td>{importedData(details.Grade)}</td>
               </tr>
             ))}
           </tbody>

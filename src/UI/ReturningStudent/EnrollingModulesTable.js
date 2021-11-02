@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import data from "./Mock-data(EnrollingModulesTable).json";
+import EnrollingCheckBox from "./EnrollingModulesCheckBox";
 
 const EnrollingModulesTable = () => {
   const [contacts, setContacts] = useState(data);
@@ -21,7 +22,9 @@ const EnrollingModulesTable = () => {
               <tr>
                 <td>{details.EnrollingModules}</td>
                 <td>{details.ModuleCode}</td>
-                <td>{details.Check}</td>
+                <td>
+                  <EnrollingCheckBox />
+                </td>
                 <td>{details.Price}</td>
               </tr>
             ))}

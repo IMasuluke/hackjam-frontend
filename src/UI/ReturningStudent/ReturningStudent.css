@@ -1,6 +1,6 @@
 .arrowButton {
   margin-left: 2vw;
-  font-size: 30px;
+  font-size: 150%;
   width: 10vw;
   background-color: white;
   color: #15305d;
@@ -15,8 +15,9 @@
 }
 
 .backButton {
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 150%;
   width: 10vw;
   background-color: white;
   color: #15305d;
@@ -31,7 +32,9 @@
 }
 
 .buttonBegin {
-  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 150%;
+  font-weight: bold;
   height: 10%;
   opacity: 100%;
   width: 20%;
@@ -51,23 +54,19 @@
   padding-bottom: 10vh;
 }
 
-.cancelButtonLabel {
-  margin-left: 2vw;
-}
-
 .cancelButton {
-  margin-left: 5vw;
+  border-color: transparent;
+  background-color: transparent;
+  border-style: solid;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 150%;
   width: 10vw;
-  background-color: white;
-  color: #15305d;
-  border-color: #15305d;
+  color: black;
 }
 
 .cancelButton:hover {
-  background-color: #15305d;
-  color: white;
+  border-color: black;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -87,7 +86,8 @@
 }
 
 .declineButton {
-  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 150%;
   font-weight: bold;
   width: 10vw;
   background-color: white;
@@ -104,7 +104,7 @@
 
 .dynamicH1 {
   font-family: "Arial";
-  font-size: 30px;
+  font-size: 150%;
   color: #707070;
   font-weight: bold;
 }
@@ -113,10 +113,25 @@
   margin-left: 15%;
 }
 
+.enrollingModulesCheckBox {
+  width: 30%;
+  height: 5vh;
+  border-radius: 50px;
+}
+
+.enrollingModulesCheckBox ::after {
+  background-color: #15305d;
+}
+
+.fail {
+  color: #fc0707;
+  font-size: 120%;
+}
+
 .h1 {
   margin-left: 5%;
   font-family: "Arial";
-  font-size: 30px;
+  font-size: 120%;
   color: #707070;
   font-weight: 200;
 }
@@ -124,7 +139,7 @@
 .h3 {
   margin-left: 2.5%;
   font-family: "Arial";
-  font-size: 30px;
+  font-size: 120%;
   color: #707070;
   font-weight: bold;
 }
@@ -147,8 +162,9 @@
 }
 
 .nextButton {
-  margin-left: 2vw;
-  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* margin-left: 2vw; */
+  font-size: 150%;
   font-weight: bold;
   width: 10vw;
   background-color: #15305d;
@@ -163,9 +179,19 @@
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.pass {
+  color: #2ca800;
+  font-size: 120%;
+}
+
+.passWithDistinction {
+  color: #15305d;
+  font-size: 120%;
+}
+
 .qualificationName {
   font-family: "Arial";
-  font-size: 20px;
+  font-size: 120%;
   color: #707070;
   font-weight: 150;
 }
@@ -212,7 +238,8 @@
 }
 
 .submitButton {
-  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 150%;
   font-weight: bold;
   width: 10vw;
   background-color: #15305d;
@@ -228,6 +255,7 @@
 }
 
 .submitDeclineDiv {
+  margin-top: 10%;
   margin-bottom: -25%;
   margin-left: 5%;
 }
