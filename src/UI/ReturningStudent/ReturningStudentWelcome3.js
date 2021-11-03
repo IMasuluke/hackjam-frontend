@@ -10,6 +10,11 @@ import NextButton from "./NextButton";
 import PastModulesTable from "./PastModulesTable";
 import EnrollingModulesTable from "./EnrollingModulesTable";
 
+{
+  /* All information in forms should autofill dynamically. With unique user information. Current data is being dynamically rendered
+  from Mock-data(EnrollingModulesTable).json, Mock-data(PastModulesTable).json and Mock-data(CourseTitle) */
+}
+
 class ReturningStudentWelcome3 extends Component {
   render() {
     return (
@@ -73,19 +78,35 @@ class ReturningStudentWelcome3 extends Component {
           <br />
           <div className="buttonsDiv">
             <label>
-              <button type="submit" className="arrowButton">
-                ←
-              </button>
+              <a
+                variant="danger"
+                href="/ReturningStudentWelcome2"
+                rel="noopener noreferre"
+              >
+                <button type="submit" className="arrowButton">
+                  ←
+                </button>
+              </a>
             </label>
             <label>
-              <button type="submit" className="nextButton">
-                Next
-              </button>
+              <a
+                variant="danger"
+                href="/ReturningStudentWelcome4"
+                rel="noopener noreferre"
+              >
+                <NextButton />
+              </a>
             </label>
             <label>
-              <button type="submit" className="cancelButton">
-                Cancel
-              </button>
+              <a
+                variant="danger"
+                href="/ReturningStudentWelcome"
+                rel="noopener noreferre"
+              >
+                <button type="submit" className="cancelButton">
+                  Cancel
+                </button>
+              </a>
             </label>
           </div>
         </div>

@@ -69,6 +69,9 @@ class LogInForm extends Component {
                 />
               </div>
               <br />
+
+              {/* "Remember me" checkbox should save individual user data such that password autofills once username is filled in*/}
+
               <input type="checkbox" className="checkBox" />
               <span>
                 <p className="checkBoxText">Remember Me</p>
@@ -100,9 +103,17 @@ class LogInForm extends Component {
                 the Privacy Notice
               </p>
 
-              <button className="buttonLogin" type="submit">
-                Log in
-              </button>
+              {/* Log in button currently produces an alert as seen in lines 33-37. Button must instead trigger verification before routing to Student Portal. */}
+
+              <a
+                variant="danger"
+                href="/StudentPortal"
+                rel="noopener noreferre"
+              >
+                <button className="buttonLogin" type="submit">
+                  Log in
+                </button>
+              </a>
             </div>
           </form>
         </div>
