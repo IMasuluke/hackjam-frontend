@@ -7,6 +7,11 @@ import ReturningStudentBar from "../ReturningStudentBar/ReturningStudentBar";
 import "./ReturningStudent.css";
 import ModuleSelectionTable from "./ModuleSelectionTable";
 
+{
+  /* All information in forms should autofill dynamically. With unique user information. Current data is being dynamically rendered
+  from Mock-data(ModuleSelection).json */
+}
+
 class ReturningStudentWelcome4 extends Component {
   render() {
     return (
@@ -62,14 +67,26 @@ class ReturningStudentWelcome4 extends Component {
               </button>
             </label>
             <label>
-              <button type="submit" className="backButton">
-                Back
-              </button>
+              <a
+                variant="danger"
+                href="/ReturningStudentWelcome3"
+                rel="noopener noreferre"
+              >
+                <button type="submit" className="backButton">
+                  Back
+                </button>
+              </a>
             </label>
             <label>
-              <button type="submit" className="cancelButton">
-                Cancel
-              </button>
+              <a
+                variant="danger"
+                href="/ReturningStudentWelcome"
+                rel="noopener noreferre"
+              >
+                <button type="submit" className="cancelButton">
+                  Cancel
+                </button>
+              </a>
             </label>
           </div>
           {/* ReturningStudentBar */}

@@ -33,7 +33,14 @@ const WelcomeBack = () => {
             if you have any questions.
           </p>
           <br />
-          <button className="buttonBegin">Begin</button>
+          <a
+            className="buttonBegin"
+            variant="danger"
+            href="/ReturningStudentWelcome1"
+            rel="noopener noreferre"
+          >
+            <button className="buttonBegin">Begin</button>
+          </a>
         </div>
       </div>
       <div>

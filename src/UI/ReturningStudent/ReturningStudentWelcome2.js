@@ -9,6 +9,10 @@ import CountryDropDown from "../../Components/CountryDropDown/CountryDropDown";
 import NextButton from "./NextButton";
 import CancelButton from "./CancelButton";
 
+{
+  /* All information in forms should autofill dynamically. With unique user information */
+}
+
 class ReturningStudentWelcome2 extends Component {
   render() {
     return (
@@ -203,8 +207,22 @@ class ReturningStudentWelcome2 extends Component {
         </div>
         <div className="ReturningStudentWelcome2Buttons">
           <label>
-            <NextButton />
-            <CancelButton />
+            <a
+              variant="danger"
+              href="/ReturningStudentWelcome3"
+              rel="noopener noreferre"
+            >
+              <NextButton />
+            </a>
+          </label>
+          <label>
+            <a
+              variant="danger"
+              href="/ReturningStudentWelcome"
+              rel="noopener noreferre"
+            >
+              <CancelButton />
+            </a>
           </label>
         </div>
         <div>
