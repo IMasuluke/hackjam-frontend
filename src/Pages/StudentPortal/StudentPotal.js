@@ -1,9 +1,10 @@
-import React, { Component } from "react";
-
+import React, { Component , useEffect } from "react";
+import PropTypes from "prop-types";
 import Footer from "../../Components/StudentPortal/Footer/Footer";
-import Header from "../../Components/StudentPortal/Header/Header"
+import Header from "../../Components/StudentPortal/Header/Header";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button,Container,Row, Col, Image, Nav, ProgressBar,Card, ListGroup, Carousel } from 'react-bootstrap';
+import { Button,Container,Row, Col, Image, Nav, ProgressBar,Card, ListGroup, Carousel, Modal } from 'react-bootstrap';
 import "./StudentPortal.css";
 import YoutubeEmbed from "./YoutubeEmbed";
 import {   MdLocalMovies} from "react-icons/md";
@@ -15,17 +16,52 @@ import Agenda from "./Agenda";
 import Favourite from "./Favourite";
 import Ads from "./Adverts";
 import Adds from "./Additional";
+import { IoNewspaperOutline  } from "react-icons/io5";
+import { MdStars  } from "react-icons/md";
+import { ImLibrary, ImProfile  } from "react-icons/im";
+import { BsChatSquareTextFill, BsCalendar3  } from "react-icons/bs";
+import { MdEmail  } from "react-icons/md";
 
 const now = 80;
- 
 
-class StudentPortalForm extends Component {
+
+
+class StudentPortalForm extends Component  {
     
+    constructor (){
+        super ();
+        this.state = {
+            show: false
+        };
+    
+    this.showModal = this.showModal.bind(this);
+    this.hideModal = this.hideModal(this);
+    }
+    showModal = () => {
+        this.setState ({show:true});
+    };
+    hideModal = () => {
+        this.setState ({show:false});
+
+    }
 
      render() {
          return (
+
               <Container fluid className= "Parent">
-                  
+                <Modal show={this.state.show} onHide={this.hideModal}>
+                    <Modal.Header closeButton>
+                        <Modal.Title>Student Advisor</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                        <Modal.Footer>
+                        <Button variant="secondary" onClick={()=>{}}>
+                            Close
+                        </Button>
+                        
+                    </Modal.Footer>
+                </Modal>
+                  {/* Axios */}
                  <Header/> <br />
                         <Container fluid className= "PorgressBar">
                             <Row>
@@ -43,17 +79,7 @@ class StudentPortalForm extends Component {
                                     <Row>
                                         <Col>
                                             <Card>
-                                                    <Card.Header >
-                                                        <Nav variant="tabs" defaultActiveKey="#first">
-                                                        <Nav.Item>
-                                                            <Nav.Link href="#first">Active</Nav.Link>
-                                                        </Nav.Item>
-                                                        <Nav.Item>
-                                                            <Nav.Link href="#link">Link</Nav.Link>
-                                                        </Nav.Item>
-                                                        
-                                                        </Nav>
-                                                    </Card.Header >
+                                                    
                                                     <Card.Body>
                                                         <Card.Title>Welcome Kekeletso Phasha</Card.Title>
                                                         
@@ -62,13 +88,48 @@ class StudentPortalForm extends Component {
                                                         <hr />
                                                         </Card.Text>
                                                             2021 Enrollement is now open.<br />
-                                                        <Button variant="danger" href= "/ReturningStudentWelcome" target="_blank" rel="noopener noreferre">Enrollment</Button>
+                                                        <Button variant="danger" 
+                                                        // href= "/ReturningStudentWelcome" target="_blank" rel="noopener noreferre"
+                                                        onClick={this.ShowModal}
+                                                        
+                                                        >Enrollment
+                                                        
+                                                        </Button>
                                                     </Card.Body>
                                              </Card>
                                         </Col>
                                         <Col>
-                                         
-                                            <Favourite />
+                                         <Card style={{ width: '18rem' }}>
+                        <Card.Header className= "header"  > 
+                             <MdStars /> Most used 
+                        </Card.Header>
+                        <ListGroup variant="flush">
+                            <ListGroup.Item action href= "/chats" target="_blank" rel="noopener noreferre" >
+                               <BsChatSquareTextFill /> Chats
+                                
+                            </ListGroup.Item>
+                          {/* href= "/ReturningStudentWelcome" target="_blank" rel="noopener noreferre"  */}
+                            <ListGroup.Item action href="#/keke2">
+                               <MdEmail /> Email
+                                
+                            </ListGroup.Item>
+                            <ListGroup.Item action href="#/keke3">
+                               <BsCalendar3 /> Calendar
+                                
+                            </ListGroup.Item>
+                            <ListGroup.Item action onClick={() => this.ShowModal} >
+                               <ImProfile /> Student Advisor
+
+                           
+                            </ListGroup.Item>
+                            <ListGroup.Item action href="https://pearson.primo.exlibrisgroup.com/discovery/account?vid=27PIOHE_INST:27PIOHE_INST&section=overview&lang=en" target="_blank" rel="noopener noreferre">
+                               <ImLibrary /> Libary
+                                
+                            </ListGroup.Item>
+                            
+                        </ListGroup>
+                    </Card>
+                                            {/* <Favourite /> */}
                                         </Col>
                                         <Row>
                                             <Col>
@@ -173,4 +234,10 @@ class StudentPortalForm extends Component {
          );
      }
 }
+
+StudentPortalForm.propTypes = {
+    advisor: PropTypes.bool
+}
+
+
 export default StudentPortalForm;
