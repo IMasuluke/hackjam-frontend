@@ -10,12 +10,13 @@ class AdvertForm extends Component {
      render() {
          return (
 
-                    <Carousel  >
+                    <Carousel indicators touch>
                             <Carousel.Item>
                                 <img
-                            className="ad"
+                                className="ad"
                                 src={Tutoring}
                                 alt="Tutoring"
+
                                 />
                                 
                             </Carousel.Item>

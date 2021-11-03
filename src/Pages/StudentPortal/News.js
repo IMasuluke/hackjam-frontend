@@ -14,7 +14,7 @@ class NewsForm extends Component {
      render() {
          return (
              <div>
-                 <h3> <IoNewspaperOutline />Latest News | <a href="/events" target="_blank" rel="noopener noreferre"> News </a> </ h3> <hr />
+                 <h3 className= "newsheader"> <IoNewspaperOutline />Latest News | <a href="/events" target="_blank" rel="noopener noreferre"> News </a> </ h3> <hr className="newline"/>
                 <CardGroup>
                 <Card className= "card">
                     <Card.Img className="pics" variant="top" src={covid} />
