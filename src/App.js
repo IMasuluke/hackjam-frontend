@@ -16,7 +16,6 @@ import Chats from "./Pages/Messaging/chat";
 
 import CountryDropDown from "./Components/CountryDropDown/CountryDropDown";
 
-
 export default function App() {
   return (
     <BrowserRouter>
@@ -48,11 +47,13 @@ export default function App() {
           path="/ReturningStudentBar"
           component={ReturningStudentBar}
         />
+
         {/* <Route
           exact
           path="/StudentAdvisorProfile"
           component={StudentAdvisorProfile}
         /> */}
+
 
         <Route
           exact
@@ -75,9 +76,13 @@ export default function App() {
           component={Chats}
         />
 
+
+        <Route exact path="/Portal" component={StudentPortalForm} />
+        <Route exact path="/events" component={EventsForm} />
+        <Route exact path="/finance" component={Finance} />
+
         <Route exact path="/StudentPortal" component={StudentPortalForm} />
         <Route exact path="/CountryDropDown" component={CountryDropDown} />
-
       </Switch>
     </BrowserRouter>
   );

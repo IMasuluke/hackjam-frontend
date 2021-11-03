@@ -5,6 +5,12 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ReturningStudentBar from "../ReturningStudentBar/ReturningStudentBar";
 import "./ReturningStudent.css";
+import ModuleSelectionTable from "./ModuleSelectionTable";
+
+{
+  /* All information in forms should autofill dynamically. With unique user information. Current data is being dynamically rendered
+  from Mock-data(ModuleSelection).json */
+}
 
 class ReturningStudentWelcome4 extends Component {
   render() {
@@ -43,16 +49,12 @@ class ReturningStudentWelcome4 extends Component {
           <h1 className="h1">Accept and Submit</h1>
           <br />
           <h1 className="h1">Review and submit module selections</h1>
+          <br />
 
-          <div className="ReturningStudentDiv4">
-            <label>
-              <h1 className="h1">Modules</h1>
-            </label>
-            <label className="costH1">
-              <h1 className="h1">Cost</h1>
-            </label>
-          </div>
+          <ModuleSelectionTable />
 
+          <br />
+          <br />
           <div className="submitDeclineDiv">
             <label>
               <button type="submit" className="submitButton">
@@ -65,12 +67,26 @@ class ReturningStudentWelcome4 extends Component {
               </button>
             </label>
             <label>
-              <button type="submit" className="backButton">
-                Back
-              </button>
+              <a
+                variant="danger"
+                href="/ReturningStudentWelcome3"
+                rel="noopener noreferre"
+              >
+                <button type="submit" className="backButton">
+                  Back
+                </button>
+              </a>
             </label>
             <label>
-              <h2 type="submit">Cancel</h2>
+              <a
+                variant="danger"
+                href="/ReturningStudentWelcome"
+                rel="noopener noreferre"
+              >
+                <button type="submit" className="cancelButton">
+                  Cancel
+                </button>
+              </a>
             </label>
           </div>
           {/* ReturningStudentBar */}

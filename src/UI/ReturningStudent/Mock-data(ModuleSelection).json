@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "module": "Discrete Maths",
+    "cost": 5000
+  },
+  {
+    "id": 2,
+    "module": "Operations Management",
+    "cost": 4800
+  },
+  {
+    "id": 3,
+    "module": "Calculus",
+    "cost": 5000
+  },
+  {
+    "id": 4,
+    "module": "Physics",
+    "cost": 4500
+  },
+  {
+    "id": 5,
+    "module": "Statistics",
+    "cost": 7000
+  },
+  {
+    "id": 6,
+    "module": "Psychology",
+    "cost": 2000
+  }
+]

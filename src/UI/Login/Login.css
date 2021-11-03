@@ -17,10 +17,13 @@ body {
 }
 
 .buttonLogin {
-  margin-bottom: -20vh;
+  font-weight: 500;
+  font-family: "Segoe UI";
+  font-size: 20px;
+
   position: relative;
   width: 70%;
-  height: 7vh;
+  height: 8vh;
   background-color: #1c4285;
   border-color: #1c4285;
   color: white;
@@ -44,7 +47,8 @@ body {
 }
 
 .checkBoxText {
-  font-weight: 200;
+  font-family: "Segoe UI";
+  font-weight: 400;
   font-size: medium;
   display: inline-table;
   margin-right: 30%;
@@ -91,6 +95,9 @@ body {
 }
 
 .inputHeaders {
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Segoe UI";
   color: #4d4d4d;
   margin-right: 52%;
 }
@@ -108,6 +115,7 @@ label {
 }
 
 .loginBox {
+  padding-top: 15%;
   text-align: center;
 }
 
@@ -125,6 +133,10 @@ label {
 }
 
 .loginP {
+  color: #707070;
+  font-weight: 500;
+  font-family: "Segoe UI";
+  font-size: 15px;
   margin-left: 15%;
   width: 70%;
 }

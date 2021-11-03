@@ -12,6 +12,10 @@ import ReturningStudentBar from "../ReturningStudentBar/ReturningStudentBar";
 import "./ReturningStudent.css";
 import CountryDropDown from "../../Components/CountryDropDown/CountryDropDown";
 
+{
+  /* All information in forms should autofill dynamically. With unique user information */
+}
+
 class ReturningStudentWelcome1 extends Component {
   render() {
     return (
@@ -168,8 +172,22 @@ class ReturningStudentWelcome1 extends Component {
                   <br />
                 </ul>
                 <label>
-                  <NextButton />
-                  <CancelButton />
+                  <a
+                    variant="danger"
+                    href="/ReturningStudentWelcome2"
+                    rel="noopener noreferre"
+                  >
+                    <NextButton />
+                  </a>
+                </label>
+                <label>
+                  <a
+                    variant="danger"
+                    href="/ReturningStudentWelcome"
+                    rel="noopener noreferre"
+                  >
+                    <CancelButton />
+                  </a>
                 </label>
               </div>
             </form>

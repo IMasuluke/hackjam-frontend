@@ -6,10 +6,11 @@
 }
 
 .footerText {
+  padding-top: 0.5%;
   margin-left: 5vw;
   color: white;
   font-family: Arial;
-  font-size: 10px;
+  font-size: 60%;
 }
 
 .footerLink {
