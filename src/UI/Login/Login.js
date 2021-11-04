@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Logo from "./Logo.png";
 import LoginCampus3 from "./LoginCampus3.jpg";
+import LoginCampus1 from "./LoginCampus1.jpg";
+import LoginCampus2 from "./LoginCampus2.jpg";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";

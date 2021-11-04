@@ -12,7 +12,6 @@
 
 .BarDivTextStep {
   margin-top: 2vh;
-
   font-family: Arial;
   color: #707070;
   position: relative;
@@ -30,9 +29,11 @@
 }
 
 .hrBarLight {
-  color: #7ecced;
+  border-color: #7ecced;
+  background-color: #7ecced;
 }
 
 .hrBarHeavy {
-  color: #15305d;
+  border-color: #15305d;
+  background-color: #15305d;
 }
