@@ -3,8 +3,8 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ReturningStudentBar from "../ReturningStudentBar/ReturningStudentBar";
 import "./ReturningStudent.css";
+import "./ReturningStudentBar.css";
 import ModuleSelectionTable from "./ModuleSelectionTable";
 
 {
@@ -31,18 +31,17 @@ class ReturningStudentWelcome4 extends Component {
               </label>
             </div>
             <br />
-            <br />
-            <label className="HrBar hrBarHeavy">
-              <hr />
+            <label className="HrBar">
+              <hr className="hrBarHeavy" />
             </label>
-            <label className="HrBar hrBarHeavy">
-              <hr />
+            <label className="HrBar">
+              <hr className="hrBarHeavy" />
             </label>
-            <label className="HrBar hrBarHeavy">
-              <hr />
+            <label className="HrBar">
+              <hr className="hrBarHeavy" />
             </label>
-            <label className="HrBar hrBarLight">
-              <hr />
+            <label className="HrBar">
+              <hr className="hrBarLight" />
             </label>
           </div>
 

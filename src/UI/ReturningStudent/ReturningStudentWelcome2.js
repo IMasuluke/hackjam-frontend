@@ -3,8 +3,8 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ReturningStudentBar from "../ReturningStudentBar/ReturningStudentBar";
 import "./ReturningStudent.css";
+import "./ReturningStudentBar.css";
 import CountryDropDown from "../../Components/CountryDropDown/CountryDropDown";
 import NextButton from "./NextButton";
 import CancelButton from "./CancelButton";
@@ -32,12 +32,11 @@ class ReturningStudentWelcome2 extends Component {
               </label>
             </div>
             <br />
-            <br />
-            <label className="HrBar hrBarHeavy">
-              <hr />
+            <label className="HrBar">
+              <hr className="hrBarHeavy" />
             </label>
-            <label className="HrBar hrBarLight">
-              <hr />
+            <label className="HrBar">
+              <hr className="hrBarLight" />
             </label>
             <label className="HrBar">
               <hr />
@@ -48,10 +47,9 @@ class ReturningStudentWelcome2 extends Component {
           </div>
 
           {/* ReturningStudentBar */}
-
+          <h1 className="h1">Sponsor Details</h1>
           <div className="leftDiv">
             <form className="ReturningStudentForm">
-              <h1 className="h1">Sponsor Details</h1>
               <br />
               <div>
                 <ul className="ReturningStudentList">
@@ -136,7 +134,6 @@ class ReturningStudentWelcome2 extends Component {
 
           <div className="rightDiv">
             <form className="ReturningStudentForm">
-              <h1 className="H1Blank">Blank</h1>
               <br />
               <ul className="ReturningStudentList">
                 <li>
@@ -168,7 +165,7 @@ class ReturningStudentWelcome2 extends Component {
                   />
                 </li>
                 <br />
-                <input type="checkbox" className="checkBox2" />
+
                 {/* Meant to be inline with first form */}
 
                 <br />
@@ -206,6 +203,17 @@ class ReturningStudentWelcome2 extends Component {
           </div>
         </div>
         <div className="ReturningStudentWelcome2Buttons">
+          <label>
+            <a
+              variant="danger"
+              href="/ReturningStudentWelcome1"
+              rel="noopener noreferre"
+            >
+              <button type="submit" className="arrowButton">
+                ←
+              </button>
+            </a>
+          </label>
           <label>
             <a
               variant="danger"

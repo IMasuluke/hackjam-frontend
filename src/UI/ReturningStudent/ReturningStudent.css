@@ -34,7 +34,7 @@
 .buttonBegin {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 150%;
+  font-size: 140%;
   font-weight: bold;
   height: 10%;
   opacity: 100%;
@@ -67,6 +67,23 @@
 }
 
 .cancelButton:hover {
+  border-color: black;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.CancelButtonReturningStudent1 {
+  border-color: transparent;
+  background-color: transparent;
+  border-style: solid;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 100%;
+  width: 10vw;
+  color: black;
+}
+
+.CancelButtonReturningStudent1:hover {
   border-color: black;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -145,8 +162,17 @@
   font-weight: bold;
 }
 
-.H1Blank {
-  color: white;
+input[type="text"] {
+  color: #000000;
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+input:focus {
+  outline: none !important;
+  border: 1px solid #707070;
+  box-shadow: 0 0 5px #1c4285;
 }
 
 .Left {
@@ -171,6 +197,24 @@
   background-color: #15305d;
   color: white;
   border-color: #15305d;
+}
+
+.NextButtonReturningStudent1 {
+  font-family: Arial, Helvetica, sans-serif;
+  /* margin-left: 2vw; */
+  font-size: 100%;
+  font-weight: bold;
+  width: 10vw;
+  background-color: #15305d;
+  color: white;
+  border-color: #15305d;
+}
+
+.NextButtonReturningStudent1:hover {
+  border-color: white;
+  background-color: #15305d;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .nextButton:hover {
@@ -219,7 +263,19 @@
   margin-right: 20%;
 }
 
+.ReturningStudentForm {
+  width: 45vw;
+}
+
+.returningStudentWelcomeInputBox {
+  height: 20%;
+  width: 40%;
+}
+
 .ReturningStudentList {
+  font-family: "Arial";
+  font-size: 60%;
+  color: #707070;
   list-style: none;
 }
 
@@ -229,8 +285,9 @@
 
 .rightDiv {
   color: #707070;
-  margin-left: 17vw;
-  display: inline-flex;
+  display: inline-table;
+  align-items: left;
+  justify-content: center;
   width: 40%;
 }
 

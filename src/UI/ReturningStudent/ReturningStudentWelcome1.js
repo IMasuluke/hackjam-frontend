@@ -8,8 +8,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ReturningStudentBar from "../ReturningStudentBar/ReturningStudentBar";
 import "./ReturningStudent.css";
+import "./ReturningStudentBar.css";
 import CountryDropDown from "../../Components/CountryDropDown/CountryDropDown";
 
 {
@@ -35,11 +35,10 @@ class ReturningStudentWelcome1 extends Component {
               </label>
             </div>
             <br />
-            <br />
 
             {/* Consider wrapping in div */}
-            <label className="HrBar hrBarLight">
-              <hr />
+            <label className="HrBar">
+              <hr className="hrBarLight" />
             </label>
             <label className="HrBar">
               <hr />
@@ -52,13 +51,12 @@ class ReturningStudentWelcome1 extends Component {
             </label>
             {/* Consider wrapping in div */}
           </div>
-
+          <br />
           {/* ReturningStudentBar */}
         </div>
+        <h1 className="h1">Update Personal Information</h1>
         <div className="leftDiv">
           <form className="ReturningStudentForm">
-            <h1 className="h1">Update Personal Information</h1>
-            <br />
             <div>
               <ul className="ReturningStudentList">
                 <li>
@@ -129,7 +127,6 @@ class ReturningStudentWelcome1 extends Component {
         <span>
           <div className="rightDiv">
             <form className="ReturningStudentForm">
-              <h1 className="H1Blank">Blank</h1>
               <br />
               <div>
                 <ul className="ReturningStudentList">
@@ -177,7 +174,9 @@ class ReturningStudentWelcome1 extends Component {
                     href="/ReturningStudentWelcome2"
                     rel="noopener noreferre"
                   >
-                    <NextButton />
+                    <button className="NextButtonReturningStudent1">
+                      Next
+                    </button>
                   </a>
                 </label>
                 <label>
@@ -186,7 +185,9 @@ class ReturningStudentWelcome1 extends Component {
                     href="/ReturningStudentWelcome"
                     rel="noopener noreferre"
                   >
-                    <CancelButton />
+                    <button className="CancelButtonReturningStudent1">
+                      Cancel
+                    </button>
                   </a>
                 </label>
               </div>
