@@ -23,7 +23,10 @@ const Finance = () => {
                                     <Card.Title>Total Amount Due:</Card.Title>
                                     {/* <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle> */}
                                     <Card.Text>
-                                    R <Form.Control  plaintext readOnly defaultValue="0.00" />
+                                        <from>
+                                            <label>R</label>  <Form.Control  plaintext readOnly defaultValue="0.00" />
+                                        </from>
+                                   
 
                                       <ProgressBar className= "bar" now={now} label={`${now}%` } />
                                 </Card.Text>
