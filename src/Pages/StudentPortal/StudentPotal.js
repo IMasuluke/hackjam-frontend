@@ -4,7 +4,7 @@ import Footer from "../../Components/StudentPortal/Footer/Footer";
 import Header from "../../Components/StudentPortal/Header/Header";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button,Container,Row, Col, Image, Nav, ProgressBar,Card, ListGroup, Carousel, Modal } from 'react-bootstrap';
+import { Button,Container,Row, Col, Image, Nav, ProgressBar,Card, ListGroup, Carousel, Modal, Form } from 'react-bootstrap';
 import "./StudentPortal.css";
 import YoutubeEmbed from "./YoutubeEmbed";
 import {   MdLocalMovies} from "react-icons/md";
@@ -28,7 +28,7 @@ const now = 80;
 
 class StudentPortalForm extends Component  {
     
-    constructor (){
+     constructor (){
         super ();
         this.state = {
             show: false
@@ -45,23 +45,13 @@ class StudentPortalForm extends Component  {
 
     }
 
+
      render() {
          return (
 
               <Container fluid className= "Parent">
-                <Modal show={this.state.show} onHide={this.hideModal}>
-                    <Modal.Header closeButton>
-                        <Modal.Title>Student Advisor</Modal.Title>
-                        </Modal.Header>
-                        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-                        <Modal.Footer>
-                        <Button variant="secondary" onClick={()=>{}}>
-                            Close
-                        </Button>
-                        
-                    </Modal.Footer>
-                </Modal>
-                  {/* Axios */}
+               
+                 
                  <Header/> <br />
                         <Container fluid className= "PorgressBar">
                             <Row>
@@ -74,68 +64,149 @@ class StudentPortalForm extends Component  {
                         </Container>
 
                         <Container className= "Structre" fluid>
+                             <Modal show={this.state.show} onHide={this.hideModal} centered size="lg">
+                    <Modal.Header closeButton className= "header">
+                        <Modal.Title>Student Advisor</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>
+                            <Row>
+                                <Col>
+                                    <Form>
+                                        <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
+                                            <Form.Label>
+                                            Name: 
+                                            </Form.Label>
+                                            <Col>
+                                            <Form.Control plaintext readOnly defaultValue="Kekeletso" />
+                                            </Col>
+                                        </Form.Group>
+                                        <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
+                                            <Form.Label>
+                                            Surname
+                                            </Form.Label>
+                                            <Col>
+                                            <Form.Control plaintext readOnly defaultValue="Phasha" />
+                                            </Col>
+                                        </Form.Group>
+                                        <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
+                                            <Form.Label>
+                                            Email:
+                                            </Form.Label>
+                                            <Col>
+                                            <Form.Control plaintext readOnly defaultValue="email@example.com" />
+                                            </Col>
+                                        </Form.Group>
+                                        <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
+                                            <Form.Label>
+                                            WhatsApp Number:
+                                            </Form.Label>
+                                            <Col>
+                                            <Form.Control plaintext readOnly defaultValue="067 785 5462" />
+                                            </Col>
+                                        </Form.Group>
+                                        <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
+                                            <Form.Label>
+                                            Office Number:
+                                            </Form.Label>
+                                            <Col>
+                                            <Form.Control plaintext readOnly defaultValue="011 499 8339" />
+                                            </Col>
+                                        </Form.Group>
+                                    </Form>
+                                </Col>
+                                <Col>
+                                image
+                                </Col>
+                            </Row>
+                        </Modal.Body>
+                        <Modal.Footer className= "header">
+                        <Button variant="secondary" onClick={this.hideModal}>
+                            Close
+                        </Button>
+                        
+                    </Modal.Footer>
+                </Modal>
                             <Row> 
                                 <Col xs={9}>
                                     <Row>
-                                        <Col>
-                                            <Card>
+                                                <Col>
+                                                    <Card >
+                                                            
+                                                            <Card.Body>
+                                                                <Card.Title>Welcome Kekeletso Phasha</Card.Title>
+                                                                
+                                                                <Card.Text>
+                                                                You do not have any messages.
+                                                                <hr />
+                                                                </Card.Text>
+                                                                    2021 Enrollement is now open.<br />
+                                                                <Button variant="danger" 
+                                                                href= "/ReturningStudentWelcome" target="_blank" rel="noopener noreferre"
+                                                                                                                               
+                                                                >Enrollment                                                            
+                                                                </Button>
+                                                            </Card.Body>
+                                                    </Card>
+                                                </Col>
+                                    <Col>
+                                            <Row>
+                                                <Col>
+                                                        
                                                     
-                                                    <Card.Body>
-                                                        <Card.Title>Welcome Kekeletso Phasha</Card.Title>
+                                                    <Card className="module">
+                                                            <Card.Header className= "header"  > 
+                                                                 Submission Deadlines 
+                                                            </Card.Header>
+                                                            <ListGroup>
+                                                                Colour |Date |Data Structures
+                                                                {/* < div className= "box">
+                                                                    keke
+                                                                </div> */}
+                                                            </ListGroup>
                                                         
-                                                        <Card.Text>
-                                                        You do not have any messages.
-                                                        <hr />
-                                                        </Card.Text>
-                                                            2021 Enrollement is now open.<br />
-                                                        <Button variant="danger" 
-                                                        // href= "/ReturningStudentWelcome" target="_blank" rel="noopener noreferre"
-                                                        onClick={this.ShowModal}
-                                                        
-                                                        >Enrollment
-                                                        
-                                                        </Button>
-                                                    </Card.Body>
-                                             </Card>
-                                        </Col>
-                                        <Col>
-                                         <Card style={{ width: '18rem' }}>
-                        <Card.Header className= "header"  > 
-                             <MdStars /> Most used 
-                        </Card.Header>
-                        <ListGroup variant="flush">
-                            <ListGroup.Item action href= "/chats" target="_blank" rel="noopener noreferre" >
-                               <BsChatSquareTextFill /> Chats
-                                
-                            </ListGroup.Item>
-                          {/* href= "/ReturningStudentWelcome" target="_blank" rel="noopener noreferre"  */}
-                            <ListGroup.Item action href="#/keke2">
-                               <MdEmail /> Email
-                                
-                            </ListGroup.Item>
-                            <ListGroup.Item action href="#/keke3">
-                               <BsCalendar3 /> Calendar
-                                
-                            </ListGroup.Item>
-                            <ListGroup.Item action onClick={() => this.ShowModal} >
-                               <ImProfile /> Student Advisor
+                                                        </Card>
+                                                </Col>
+                                                <Col>
+                                                    
+                                                        <Card >
+                                                            <Card.Header className= "header"  > 
+                                                                <MdStars /> Important Apps 
+                                                            </Card.Header>
+                                                            <ListGroup variant="flush">
+                                                                <ListGroup.Item action href= "/chats" target="_blank" rel="noopener noreferre" >
+                                                                <BsChatSquareTextFill /> Chats
+                                                                    
+                                                                </ListGroup.Item>
+                                                            
+                                                                <ListGroup.Item action href="https://outlook.office.com/mail/inbox" target="_blank" rel="noopener noreferre">
+                                                                <MdEmail /> Outlook Emails
+                                                                    
+                                                                </ListGroup.Item>
+                                                                <ListGroup.Item action href="https://teams.microsoft.com/" target="_blank" rel="noopener noreferre">
+                                                                <BsCalendar3 /> Teams Calendar
+                                                                    
+                                                                </ListGroup.Item>
+                                                                <ListGroup.Item action  onClick={this.showModal}>
+                                                                <ImProfile /> Student Advisor
 
-                           
-                            </ListGroup.Item>
-                            <ListGroup.Item action href="https://pearson.primo.exlibrisgroup.com/discovery/account?vid=27PIOHE_INST:27PIOHE_INST&section=overview&lang=en" target="_blank" rel="noopener noreferre">
-                               <ImLibrary /> Libary
-                                
-                            </ListGroup.Item>
-                            
-                        </ListGroup>
-                    </Card>
-                                            {/* <Favourite /> */}
-                                        </Col>
+                                                            
+                                                                </ListGroup.Item>
+                                                                <ListGroup.Item action href="https://pearson.primo.exlibrisgroup.com/discovery/account?vid=27PIOHE_INST:27PIOHE_INST&section=overview&lang=en" target="_blank" rel="noopener noreferre">
+                                                                <ImLibrary /> Libary
+                                                                    
+                                                                </ListGroup.Item>
+                                                                
+                                                            </ListGroup>
+                                                        </Card>
+                                                </Col>
+                                            </Row>
+
+                                    </Col>
                                         <Row>
                                             <Col>
                                              <br />
-                                               <h3> <MdLocalMovies />
-                                                 Now Playing </h3>
+                                               <h4> <MdLocalMovies />
+                                                 Now Playing </h4>
                                             <YoutubeEmbed embedId="S_e66j1NFMo" />
                                             <a href="/#" target="_blank" rel="noopener noreferre"> More Videos like this <ImArrowRight2 /> </a>
                                             </Col>
@@ -162,7 +233,7 @@ class StudentPortalForm extends Component  {
                                     <Row>
                                         <Col>
                                             <Card style={{ width: '18rem' }}>
-                                                        <Card.Header className= "header"> <IoMdSchool/> My Module</Card.Header>
+                                                        <Card.Header className= "header"> <IoMdSchool/> My Course</Card.Header>
                                                         <ListGroup variant="flush">
                                                             <ListGroup.Item action href="https://mylmsft.institution.africa/login/index.php" target="_blank" rel="noopener noreferre">
                                                              Computer Science
@@ -172,20 +243,20 @@ class StudentPortalForm extends Component  {
                                             </Card>
                                         </Col>
                                     </Row>
-                                    <hr/>
+                                    <hr className= "sideline"/>
                                      <Row>
                                         <Col>
                                             <Agenda />
                                         </Col>
                                     </Row>
-                                        <hr/>
+                                        <hr className= "sideline"/>
                                     <Row>
                                         <Col className= "adblock">
                                         
                                           <Ads />  
                                         </Col>
                                     </Row>
-                                    <hr/>
+                                    <hr className= "sideline"/>
                                     <Row>
                                         <Col>
                                             <Card style={{ width: '18rem' }}>
@@ -201,7 +272,7 @@ class StudentPortalForm extends Component  {
                                             </Card>
                                         </Col>
                                     </Row>
-                                        <hr className= "divider"/>
+                                        <hr style ={{size:"4px"}} />
                                     <Row>
                                         <Col>
                                             <Card style={{ width: '18rem' }}> 
@@ -210,12 +281,13 @@ class StudentPortalForm extends Component  {
                                                     
                                                     <Card.Title>Eduvous Student Crisis Line</Card.Title>
                                                     
-                                                    <Card.Text>
+                                                    <Card.Text className="emotional">
                                                     Support fot students experiencing emotional and psychological distess. The
                                                     Toll free line is managed by professionals and is avaiable 24/7/365.
                                                     Call: 0800 111 3131.
                                                     You can also contact the counselling and Career Development Unit.
                                                     </Card.Text>
+                                                    
                                                     <Card.Link href="#">Counselling</Card.Link>
                                                    
                                                 </Card.Body>

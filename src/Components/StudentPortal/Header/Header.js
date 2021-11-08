@@ -23,7 +23,7 @@ class HeaderForm extends Component {
                     </Col>
                 </Row>
             
-            <Navbar collapseOnSelect expand="lg" bg="light" variant="light" sticky="top">
+            <Navbar collapseOnSelect expand="lg" bg="light" variant="light" >
                 <Container fluid ClassName= "NavBar">
                     <Row>
                         <Col>                     
@@ -80,22 +80,34 @@ class HeaderForm extends Component {
                                     {/* <Nav.Link href="#pricing">Support</Nav.Link> */}
                                 </Nav>
                                     {/* <Navbar.Collapse>< BiSearch/></Navbar.Collapse> */}
-                                <Nav placement="end">    
+                                <Nav placement="end"className= "end">    
                                 
                                     
                         
                         
-                            <BiSearch />
+                            <BiSearch onClick= {"#action/3.1"}/>
                             <CgProfile/>
                         
                                 </Nav>
                                </Navbar.Collapse> 
                         </Col>
+                        
                     </Row>
                    
                 </Container>
             </Navbar>
-
+            <Container className="wrap">
+            <Row  >
+                <Col>
+                <img
+                            src= {Image2}
+                            className="elogo"
+                            alt="Eduvos logo"
+                            
+                        />
+                        </Col>
+            </Row>
+            </ Container>
             </div>
             
         );

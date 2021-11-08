@@ -45,3 +45,34 @@
 .Search {
   align-content: left;
 }
+
+.elogo {
+  width: 120px;
+  height: 120px;
+  z-index: 1;
+  border-radius: 20px;
+  top: 14%;
+  
+  margin-left:-1px;
+
+  left:0;
+  position: absolute;
+  z-index: 5;
+  overflow: hidden;
+}
+
+/* .wrap {
+  top: 14%;
+  
+  margin-left:-15px;
+
+  left:0;
+  position: absolute;
+  z-index: 5;
+  overflow: hidden;
+} */
+
+.end{
+   display: flex;
+  justify-content: flex-end;
+}
