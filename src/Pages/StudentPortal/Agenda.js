@@ -10,17 +10,18 @@ class AgendaForm extends Component {
          return (
 
                     <Card style={{ width: '18rem' }}>
-                     <Card.Header className= "header" href="#"> <IoTodayOutline /> Agenda</Card.Header>
+                     <Card.Header className= "header" href="#"> <IoTodayOutline /> Timetable</Card.Header>
                     <Card.Body>
                        
-                        <Card.Title> Today </Card.Title>
+                        <Card.Title> Monday </Card.Title>
                         <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
+                            <h6>8pm | Database Management</h6>
+                            <h6>12pm | Network Security</h6>
+                            
                         </Card.Text>
                         <hr />
-                        <Card.Title> Tomorrow </Card.Title>
-                        <Button variant="primary">Go somewhere</Button>
+                        <Card.Title> Tuesday </Card.Title>
+                        
                     </Card.Body>
                     </Card>
 
