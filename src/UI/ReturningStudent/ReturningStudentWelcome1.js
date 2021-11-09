@@ -130,13 +130,21 @@ class ReturningStudentWelcome1 extends Component {
             <br />
             <div>
               <ul className="ReturningStudentList">
-                <li>State/Province:</li>
+                <li>
+                  State/Province:
+                  <input
+                    className="freturningStudentWelcomeInputBox"
+                    type="text"
+                    // value={username}
+                    // onChange={this.handleUsernameChange}
+                  />
+                </li>
                 <br />
                 <br />
                 <li className="item">
                   Postal Code:
                   <input
-                    className="freturningStudentWelcomeInputBox"
+                    className="greturningStudentWelcomeInputBox"
                     type="text"
                     // value={username}
                     // onChange={this.handleUsernameChange}
@@ -147,7 +155,7 @@ class ReturningStudentWelcome1 extends Component {
                 <li>
                   Email Address:
                   <input
-                    className="greturningStudentWelcomeInputBox"
+                    className="hreturningStudentWelcomeInputBox"
                     type="text"
                     // value={username}
                     // onChange={this.handleUsernameChange}
@@ -159,7 +167,7 @@ class ReturningStudentWelcome1 extends Component {
                 <li>
                   Phone Number:
                   <input
-                    className="hreturningStudentWelcomeInputBox"
+                    className="ireturningStudentWelcomeInputBox"
                     type="text"
                     // value={username}
                     // onChange={this.handleUsernameChange}

@@ -15,9 +15,10 @@
 } */
 
 .costTotalSum {
+  margin-right: 2vw;
   border: 0.5px solid black;
   font-size: 120%;
-  width: 10vw;
+  width: 5vw;
   height: 6vh;
 }
 

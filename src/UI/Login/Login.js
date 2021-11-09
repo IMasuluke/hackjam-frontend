@@ -32,11 +32,11 @@ class LogInForm extends Component {
     });
   };
 
-  handleSubmit = (event) => {
-    alert(
-      `Your student number is ${this.state.username} and your password is ${this.state.password}`
-    );
-  };
+  // handleSubmit = (event) => {
+  //   alert(
+  //     `Your student number is ${this.state.username} and your password is ${this.state.password}`
+  //   );
+  // };
 
   render() {
     const { username, password } = this.state;
@@ -107,15 +107,16 @@ class LogInForm extends Component {
 
               {/* Log in button currently produces an alert as seen in lines 33-37. Button must instead trigger verification before routing to Student Portal. */}
 
-              <a
-                variant="danger"
-                href="/StudentPortal"
-                rel="noopener noreferre"
-              >
-                <button className="buttonLogin" type="submit">
+              <button className="buttonLogin" type="submit">
+                <a
+                  className="buttonLogin LoginATag"
+                  variant="danger"
+                  href="/Portal"
+                  rel="noopener noreferre"
+                >
                   Log in
-                </button>
-              </a>
+                </a>
+              </button>
             </div>
           </form>
         </div>

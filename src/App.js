@@ -47,33 +47,13 @@ export default function App() {
           component={StudentAdvisorProfile}
         /> */}
 
-
-        <Route
-          exact
-          path="/Portal"
-          component={StudentPortalForm}
-        />
-         <Route
-          exact
-          path="/events"
-          component={EventsForm}
-        />
-        <Route
-          exact
-          path="/finance"
-          component={Finance}
-        />
-        <Route
-          exact
-          path="/chats"
-          component={Chats}
-        />
-
-
         <Route exact path="/Portal" component={StudentPortalForm} />
         <Route exact path="/events" component={EventsForm} />
         <Route exact path="/finance" component={Finance} />
+        <Route exact path="/chats" component={Chats} />
 
+        <Route exact path="/events" component={EventsForm} />
+        <Route exact path="/finance" component={Finance} />
 
         <Route exact path="/StudentPortal" component={StudentPortalForm} />
         <Route exact path="/CountryDropDown" component={CountryDropDown} />

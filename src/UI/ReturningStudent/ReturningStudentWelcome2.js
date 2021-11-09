@@ -56,7 +56,7 @@ class ReturningStudentWelcome2 extends Component {
                   <li>
                     First Name:
                     <input
-                      className="Left"
+                      className="jreturningStudentWelcomeInputBox"
                       type="text"
                       // value={username}
                       // onChange={this.handleUsernameChange}
@@ -67,7 +67,7 @@ class ReturningStudentWelcome2 extends Component {
                   <li>
                     Surname:
                     <input
-                      className=" Left"
+                      className="kreturningStudentWelcomeInputBox"
                       type="text"
                       // value={username}
                       // onChange={this.handleUsernameChange}
@@ -78,7 +78,7 @@ class ReturningStudentWelcome2 extends Component {
                   <li>
                     Address Line 1:
                     <input
-                      className=" Left"
+                      className="lreturningStudentWelcomeInputBox"
                       type="text"
                       // value={username}
                       // onChange={this.handleUsernameChange}
@@ -89,7 +89,7 @@ class ReturningStudentWelcome2 extends Component {
                   <li>
                     Address Line 2:
                     <input
-                      className=" Left"
+                      className="mreturningStudentWelcomeInputBox"
                       type="text"
                       // value={username}
                       // onChange={this.handleUsernameChange}
@@ -109,7 +109,7 @@ class ReturningStudentWelcome2 extends Component {
                   <li>
                     First Name:
                     <input
-                      className=" Left"
+                      className="nreturningStudentWelcomeInputBox"
                       type="text"
                       // value={username}
                       // onChange={this.handleUsernameChange}
@@ -120,7 +120,7 @@ class ReturningStudentWelcome2 extends Component {
                   <li>
                     Surname:
                     <input
-                      className=" Left"
+                      className="oreturningStudentWelcomeInputBox"
                       type="text"
                       // value={username}
                       // onChange={this.handleUsernameChange}
@@ -137,7 +137,13 @@ class ReturningStudentWelcome2 extends Component {
               <br />
               <ul className="ReturningStudentList">
                 <li>
-                  State/Province:{" "}
+                  State/Province:
+                  <input
+                    className="preturningStudentWelcomeInputBox"
+                    type="text"
+                    // value={username}
+                    // onChange={this.handleUsernameChange}
+                  />
                   <li>
                     <CountryDropDown />
                   </li>
@@ -147,7 +153,7 @@ class ReturningStudentWelcome2 extends Component {
                 <li>
                   Postal Code:
                   <input
-                    className="returningStudentWelcomeInputBox"
+                    className="qreturningStudentWelcomeInputBox"
                     type="text"
                     // value={username}
                     // onChange={this.handleUsernameChange}
@@ -158,7 +164,7 @@ class ReturningStudentWelcome2 extends Component {
                 <li>
                   Email Address:
                   <input
-                    className="returningStudentWelcomeInputBox"
+                    className="rreturningStudentWelcomeInputBox"
                     type="text"
                     // value={username}
                     // onChange={this.handleUsernameChange}
@@ -179,7 +185,7 @@ class ReturningStudentWelcome2 extends Component {
                 <li>
                   Email Address:
                   <input
-                    className="returningStudentWelcomeInputBox Right"
+                    className="sreturningStudentWelcomeInputBox Right"
                     type="text"
                     // value={username}
                     // onChange={this.handleUsernameChange}
@@ -190,7 +196,7 @@ class ReturningStudentWelcome2 extends Component {
                 <li>
                   Phone Number:
                   <input
-                    className="returningStudentWelcomeInputBox Right"
+                    className="treturningStudentWelcomeInputBox Right"
                     type="text"
                     // value={username}
                     // onChange={this.handleUsernameChange}
