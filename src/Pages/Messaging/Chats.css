@@ -8,5 +8,12 @@
 }
 
 .type{
- width: 100%;
+ width: 100px;
+}
+
+.messagearea{
+   height:70%;
+}
+.community{
+   height:30%;
 }
