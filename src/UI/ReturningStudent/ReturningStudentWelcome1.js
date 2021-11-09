@@ -62,7 +62,7 @@ class ReturningStudentWelcome1 extends Component {
                 <li>
                   First Name:
                   <input
-                    className="returningStudentWelcomeInputBox"
+                    className="areturningStudentWelcomeInputBox"
                     type="text"
                     // value={username}
                     // onChange={this.handleUsernameChange}
@@ -73,7 +73,7 @@ class ReturningStudentWelcome1 extends Component {
                 <li>
                   Surname:
                   <input
-                    className="returningStudentWelcomeInputBox"
+                    className="breturningStudentWelcomeInputBox"
                     type="text"
                     // value={username}
                     // onChange={this.handleUsernameChange}
@@ -84,7 +84,7 @@ class ReturningStudentWelcome1 extends Component {
                 <li>
                   Preferred Name:
                   <input
-                    className="returningStudentWelcomeInputBox"
+                    className="creturningStudentWelcomeInputBox"
                     type="text"
                     // value={username}
                     // onChange={this.handleUsernameChange}
@@ -96,7 +96,7 @@ class ReturningStudentWelcome1 extends Component {
                 <li>
                   Address Line 1:
                   <input
-                    className="returningStudentWelcomeInputBox"
+                    className="dreturningStudentWelcomeInputBox"
                     type="text"
                     // value={username}
                     // onChange={this.handleUsernameChange}
@@ -107,7 +107,7 @@ class ReturningStudentWelcome1 extends Component {
                 <li>
                   Address Line 2:
                   <input
-                    className="returningStudentWelcomeInputBox"
+                    className="ereturningStudentWelcomeInputBox"
                     type="text"
                     // value={username}
                     // onChange={this.handleUsernameChange}
@@ -124,76 +124,74 @@ class ReturningStudentWelcome1 extends Component {
         </div>
 
         {/* Break between forms */}
-        <span>
-          <div className="rightDiv">
-            <form className="ReturningStudentForm">
-              <br />
-              <div>
-                <ul className="ReturningStudentList">
-                  <li>State/Province:</li>
-                  <br />
-                  <br />
-                  <li>
-                    Postal Code:
-                    <input
-                      className="returningStudentWelcomeInputBox"
-                      type="text"
-                      // value={username}
-                      // onChange={this.handleUsernameChange}
-                    />
-                  </li>
-                  <br />
-                  <br />
-                  <li>
-                    Email Address:
-                    <input
-                      className="returningStudentWelcomeInputBox"
-                      type="text"
-                      // value={username}
-                      // onChange={this.handleUsernameChange}
-                    />
-                  </li>
 
-                  <br />
-                  <br />
-                  <li>
-                    Phone Number:
-                    <input
-                      className="returningStudentWelcomeInputBox"
-                      type="text"
-                      // value={username}
-                      // onChange={this.handleUsernameChange}
-                    />
-                  </li>
-                  <br />
-                  <br />
-                </ul>
-                <label>
-                  <a
-                    variant="danger"
-                    href="/ReturningStudentWelcome2"
-                    rel="noopener noreferre"
-                  >
-                    <button className="NextButtonReturningStudent1">
-                      Next
-                    </button>
-                  </a>
-                </label>
-                <label>
-                  <a
-                    variant="danger"
-                    href="/ReturningStudentWelcome"
-                    rel="noopener noreferre"
-                  >
-                    <button className="CancelButtonReturningStudent1">
-                      Cancel
-                    </button>
-                  </a>
-                </label>
-              </div>
-            </form>
-          </div>
-        </span>
+        <div className="rightDiv">
+          <form className="ReturningStudentForm">
+            <br />
+            <div>
+              <ul className="ReturningStudentList">
+                <li>State/Province:</li>
+                <br />
+                <br />
+                <li className="item">
+                  Postal Code:
+                  <input
+                    className="freturningStudentWelcomeInputBox"
+                    type="text"
+                    // value={username}
+                    // onChange={this.handleUsernameChange}
+                  />
+                </li>
+                <br />
+                <br />
+                <li>
+                  Email Address:
+                  <input
+                    className="greturningStudentWelcomeInputBox"
+                    type="text"
+                    // value={username}
+                    // onChange={this.handleUsernameChange}
+                  />
+                </li>
+
+                <br />
+                <br />
+                <li>
+                  Phone Number:
+                  <input
+                    className="hreturningStudentWelcomeInputBox"
+                    type="text"
+                    // value={username}
+                    // onChange={this.handleUsernameChange}
+                  />
+                </li>
+                <br />
+                <br />
+              </ul>
+              <label className="navButtons">
+                <a
+                  variant="danger"
+                  href="/ReturningStudentWelcome3"
+                  rel="noopener noreferre"
+                >
+                  <button className="NextButtonReturningStudent1">Next</button>
+                </a>
+              </label>
+              <label className="navButtons">
+                <a
+                  variant="danger"
+                  href="/ReturningStudentWelcome"
+                  rel="noopener noreferre"
+                >
+                  <button className="CancelButtonReturningStudent1">
+                    Cancel
+                  </button>
+                </a>
+              </label>
+            </div>
+          </form>
+        </div>
+
         <div>
           <Footer />
         </div>

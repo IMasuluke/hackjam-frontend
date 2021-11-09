@@ -10,7 +10,6 @@ import ReturningStudentWelcome4 from "./UI/ReturningStudent/ReturningStudentWelc
 import StudentPortalForm from "./Pages/StudentPortal/StudentPotal";
 import Finance from "./Pages/Finance/finance";
 import EventsForm from "./Pages/Events/events";
-
 import CountryDropDown from "./Components/CountryDropDown/CountryDropDown";
 
 export default function App() {
@@ -44,6 +43,10 @@ export default function App() {
           path="/StudentAdvisorProfile"
           component={StudentAdvisorProfile}
         /> */}
+
+        <Route exact path="/Portal" component={StudentPortalForm} />
+        <Route exact path="/events" component={EventsForm} />
+        <Route exact path="/finance" component={Finance} />
 
         <Route exact path="/Portal" component={StudentPortalForm} />
         <Route exact path="/events" component={EventsForm} />

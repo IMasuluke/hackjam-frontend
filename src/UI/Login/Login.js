@@ -34,7 +34,7 @@ class LogInForm extends Component {
 
   handleSubmit = (event) => {
     alert(
-      `Your username is ${this.state.username} and your password is ${this.state.password}`
+      `Your student number is ${this.state.username} and your password is ${this.state.password}`
     );
   };
 

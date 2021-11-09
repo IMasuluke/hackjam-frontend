@@ -1,3 +1,51 @@
+.areturningStudentWelcomeInputBox {
+  align-items: right;
+  height: 20%;
+  width: 40%;
+}
+
+.breturningStudentWelcomeInputBox {
+  align-items: right;
+  height: 20%;
+  width: 40%;
+}
+
+.creturningStudentWelcomeInputBox {
+  align-items: right;
+  height: 20%;
+  width: 40%;
+}
+
+.dreturningStudentWelcomeInputBox {
+  align-items: right;
+  height: 20%;
+  width: 40%;
+}
+
+.ereturningStudentWelcomeInputBox {
+  align-items: right;
+  height: 20%;
+  width: 40%;
+}
+
+.freturningStudentWelcomeInputBox {
+  align-items: right;
+  height: 20%;
+  width: 40%;
+}
+
+.greturningStudentWelcomeInputBox {
+  align-items: right;
+  height: 20%;
+  width: 40%;
+}
+
+.hreturningStudentWelcomeInputBox {
+  align-items: right;
+  height: 20%;
+  width: 40%;
+}
+
 .arrowButton {
   margin-left: 2vw;
   font-size: 150%;
@@ -147,9 +195,10 @@
 }
 
 .h1 {
-  margin-left: 5%;
+  padding-bottom: 2.5%;
+  margin-left: 2.5%;
   font-family: "Arial";
-  font-size: 120%;
+  font-size: 170%;
   color: #707070;
   font-weight: 200;
 }
@@ -182,10 +231,14 @@ input:focus {
 
 .leftDiv {
   color: #707070;
-  display: inline-table;
+  display: inline-flex;
   align-items: left;
   justify-content: center;
   width: 40%;
+}
+
+.navButtons {
+  margin-top: 15%;
 }
 
 .nextButton {
@@ -268,13 +321,15 @@ input:focus {
 }
 
 .returningStudentWelcomeInputBox {
+  align-items: right;
   height: 20%;
   width: 40%;
 }
 
 .ReturningStudentList {
   font-family: "Arial";
-  font-size: 60%;
+  font-size: 50%;
+  font-weight: 200;
   color: #707070;
   list-style: none;
 }
@@ -285,10 +340,11 @@ input:focus {
 
 .rightDiv {
   color: #707070;
-  display: inline-table;
-  align-items: left;
+  display: inline-flex;
+  align-items: right;
   justify-content: center;
   width: 40%;
+  float: right;
 }
 
 .secondH1 {
