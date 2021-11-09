@@ -3,10 +3,21 @@ import PropTypes from "prop-types";
 import Footer from "../../Components/StudentPortal/Footer/Footer";
 import Header from "../../Components/StudentPortal/Header/Header";
 import axios from "axios";
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button,Container,Row, Col, Image, Nav, ProgressBar,Card, ListGroup, Carousel, Modal, Form } from 'react-bootstrap';
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import {
+  Button,
+  Container,
+  Row,
+  Col,
+  Image,
+  Nav,
+  ProgressBar,
+  Card,
+  ListGroup,
+  Carousel,
+  Modal,
+  Form,
+} from "react-bootstrap";
 import "./StudentPortal.css";
 import YoutubeEmbed from "./YoutubeEmbed";
 import { MdLocalMovies } from "react-icons/md";
@@ -50,7 +61,6 @@ class StudentPortalForm extends Component {
       .catch((err) => {
         console.log("error in request", err);
       });
-
 
     this.showModal = this.showModal.bind(this);
     this.hideModal = this.hideModal(this);
@@ -203,168 +213,6 @@ class StudentPortalForm extends Component {
                         <ListGroup>
                           Colour |Date |Data Structures
                           {/* < div className= "box">
-
-class StudentPortalForm extends Component  {
-    
-     constructor (){
-        super ();
-        this.state = {
-            show: false };
-
-             axios.get('http://localhost:8081/mono-api/api/getUserbyStudentNumber')
-                            .then(res => {
-                                console.log(res.data);
-                            })
-                            .catch(function (error) {
-                                console.log(error);
-                            })
-                            .then(function () {
-                                // always executed
-                            });
-        
-    
-    this.showModal = this.showModal.bind(this);
-    this.hideModal = this.hideModal(this);
-    
-    }
-    showModal = () => {
-        this.setState ({show:true});
-    }
-    hideModal = () => {
-        this.setState ({show:false});
-
-    }
-    // constructor(){
-    //     super ();
-                   
-    //                     }
-
-     render() {
-         return (
-
-              <Container fluid className= "Parent">
-               
-                 
-                 <Header/> <br />
-                        <Container fluid className= "PorgressBar">
-                            <Row>
-                                
-                                <Col  className= "Progress"> 
-                                My Progress: <ProgressBar className= "bar" now={now} label={`${now}%` } />
-
-                                </Col>
-                            </Row>
-                        </Container>
-
-                        <Container className= "Structre" fluid>
-                             <Modal show={this.state.show} onHide={this.hideModal} centered size="lg">
-                    <Modal.Header closeButton className= "header">
-                        <Modal.Title>Student Advisor</Modal.Title>
-                        </Modal.Header>
-                        <Modal.Body>
-                            <Row>
-                                <Col>
-                                    {/* <Form>
-                                        <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
-                                            <Form.Label>
-                                            Name: 
-                                            </Form.Label>
-                                            <Col>
-                                            <Form.Control plaintext readOnly defaultValue="Kekeletso" />
-                                            </Col>
-                                        </Form.Group>
-                                        <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
-                                            <Form.Label>
-                                            Surname
-                                            </Form.Label>
-                                            <Col>
-                                            <Form.Control plaintext readOnly defaultValue="Phasha" />
-                                            </Col>
-                                        </Form.Group>
-                                        <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
-                                            <Form.Label>
-                                            Email:
-                                            </Form.Label>
-                                            <Col>
-                                            <Form.Control plaintext readOnly defaultValue="email@example.com" />
-                                            </Col>
-                                        </Form.Group>
-                                        <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
-                                            <Form.Label>
-                                            WhatsApp Number: */}
-                                            {/* </Form.Label>
-                                            <Col>
-                                            <Form.Control plaintext readOnly defaultValue="067 785 5462" />
-                                            </Col>
-                                        </Form.Group>
-                                        <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
-                                            <Form.Label>
-                                            Office Number:
-                                            </Form.Label>
-                                            <Col>
-                                            <Form.Control plaintext readOnly defaultValue="011 499 8339" />
-                                            </Col>
-                                        </Form.Group>
-                                    </Form> */}
-                                    <h4>Name:</h4>
-                                    <h4>Surname:</h4>
-                                    <h4>Email:</h4>
-                                    <h4>Phone Number:</h4>
-                                    <h4>WhatsApp Number:</h4>
-                                </Col>
-                                <Col>
-                                image
-                                </Col>
-                            </Row>
-                        </Modal.Body>
-                        <Modal.Footer className= "header">
-                        <Button variant="secondary" onClick={this.hideModal}>
-                            Close
-                        </Button>
-                        
-                    </Modal.Footer>
-                </Modal>
-                            <Row> 
-                                <Col xs={9}>
-                                    <Row>
-                                                <Col>
-                                                    <Card >
-                                                            
-                                                            <Card.Body>
-                                                                <Card.Title>Welcome Kekeletso Phasha
-
-                                                                     
-                                                                    <Form>
-
-                                                                    </Form>
-                                                                </Card.Title>
-                                                                
-                                                                <Card.Text>
-                                                                You do not have any messages.
-                                                                <hr />
-                                                                </Card.Text>
-                                                                    2021 Enrollement is now open.<br />
-                                                                <Button variant="danger" 
-                                                                href= "/ReturningStudentWelcome" target="_blank" rel="noopener noreferre"
-                                                                                                                               
-                                                                >Enrollment                                                            
-                                                                </Button>
-                                                            </Card.Body>
-                                                    </Card>
-                                                </Col>
-                                    <Col>
-                                            <Row>
-                                                <Col>
-                                                        
-                                                    
-                                                    <Card className="module">
-                                                            <Card.Header className= "header"  > 
-                                                                 Submission Deadlines 
-                                                            </Card.Header>
-                                                            <ListGroup>
-                                                                {/* Colour |Date |Data Structures */}
-                                                                {/* < div className= "box">
-
                                                                     keke
                                                                 </div> */}
                         </ListGroup>
