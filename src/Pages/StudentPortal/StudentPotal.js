@@ -2,7 +2,7 @@ import React, { Component , useEffect } from "react";
 import PropTypes from "prop-types";
 import Footer from "../../Components/StudentPortal/Footer/Footer";
 import Header from "../../Components/StudentPortal/Header/Header";
-
+import axios from "axios";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button,Container,Row, Col, Image, Nav, ProgressBar,Card, ListGroup, Carousel, Modal, Form } from 'react-bootstrap';
 import "./StudentPortal.css";
@@ -31,20 +31,35 @@ class StudentPortalForm extends Component  {
      constructor (){
         super ();
         this.state = {
-            show: false
-        };
+            show: false };
+
+             axios.get('http://localhost:8081/mono-api/api/getUserbyStudentNumber')
+                            .then(res => {
+                                console.log(res.data);
+                            })
+                            .catch(function (error) {
+                                console.log(error);
+                            })
+                            .then(function () {
+                                // always executed
+                            });
+        
     
     this.showModal = this.showModal.bind(this);
     this.hideModal = this.hideModal(this);
+    
     }
     showModal = () => {
         this.setState ({show:true});
-    };
+    }
     hideModal = () => {
         this.setState ({show:false});
 
     }
-
+    // constructor(){
+    //     super ();
+                   
+    //                     }
 
      render() {
          return (
@@ -71,7 +86,7 @@ class StudentPortalForm extends Component  {
                         <Modal.Body>
                             <Row>
                                 <Col>
-                                    <Form>
+                                    {/* <Form>
                                         <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
                                             <Form.Label>
                                             Name: 
@@ -98,8 +113,8 @@ class StudentPortalForm extends Component  {
                                         </Form.Group>
                                         <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
                                             <Form.Label>
-                                            WhatsApp Number:
-                                            </Form.Label>
+                                            WhatsApp Number: */}
+                                            {/* </Form.Label>
                                             <Col>
                                             <Form.Control plaintext readOnly defaultValue="067 785 5462" />
                                             </Col>
@@ -112,7 +127,12 @@ class StudentPortalForm extends Component  {
                                             <Form.Control plaintext readOnly defaultValue="011 499 8339" />
                                             </Col>
                                         </Form.Group>
-                                    </Form>
+                                    </Form> */}
+                                    <h4>Name:</h4>
+                                    <h4>Surname:</h4>
+                                    <h4>Email:</h4>
+                                    <h4>Phone Number:</h4>
+                                    <h4>WhatsApp Number:</h4>
                                 </Col>
                                 <Col>
                                 image
@@ -133,7 +153,13 @@ class StudentPortalForm extends Component  {
                                                     <Card >
                                                             
                                                             <Card.Body>
-                                                                <Card.Title>Welcome Kekeletso Phasha</Card.Title>
+                                                                <Card.Title>Welcome Kekeletso Phasha
+
+                                                                     
+                                                                    <Form>
+
+                                                                    </Form>
+                                                                </Card.Title>
                                                                 
                                                                 <Card.Text>
                                                                 You do not have any messages.
@@ -158,7 +184,7 @@ class StudentPortalForm extends Component  {
                                                                  Submission Deadlines 
                                                             </Card.Header>
                                                             <ListGroup>
-                                                                Colour |Date |Data Structures
+                                                                {/* Colour |Date |Data Structures */}
                                                                 {/* < div className= "box">
                                                                     keke
                                                                 </div> */}
