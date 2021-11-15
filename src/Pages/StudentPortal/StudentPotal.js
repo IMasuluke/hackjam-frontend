@@ -97,7 +97,7 @@ class StudentPortalForm extends Component {
             <Modal.Body>
               <Row>
                 <Col>
-                  <Form>
+                  {/* <Form>
                     <Form.Group
                       as={Row}
                       className="mb-3"
@@ -168,7 +168,11 @@ class StudentPortalForm extends Component {
                         />
                       </Col>
                     </Form.Group>
-                  </Form>
+                  </Form> */}
+                  <h4>Name</h4>
+                  <h4>Surname</h4>
+                  <h4>Phone Number</h4>
+                  <h4>Email address</h4>
                 </Col>
                 <Col>image</Col>
               </Row>
