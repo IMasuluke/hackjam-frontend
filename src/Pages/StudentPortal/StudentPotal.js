@@ -63,13 +63,13 @@ class StudentPortalForm extends Component {
       });
 
     this.showModal = this.showModal.bind(this);
-    this.hideModal = this.hideModal(this);
+    this.hideModal = this.hideModal.bind(this);
   }
   showModal = () => {
-    this.setState({ show: true });
+    this.setState({show: true });
   };
   hideModal = () => {
-    this.setState({ show: false });
+    this.setState({ show:false });
   };
 
   render() {
@@ -96,79 +96,7 @@ class StudentPortalForm extends Component {
             </Modal.Header>
             <Modal.Body>
               <Row>
-                <Col>
-                  {/* <Form>
-                    <Form.Group
-                      as={Row}
-                      className="mb-3"
-                      controlId="formPlaintextEmail"
-                    >
-                      <Form.Label>Name:</Form.Label>
-                      <Col>
-                        <Form.Control
-                          plaintext
-                          readOnly
-                          defaultValue="Kekeletso"
-                        />
-                      </Col>
-                    </Form.Group>
-                    <Form.Group
-                      as={Row}
-                      className="mb-3"
-                      controlId="formPlaintextEmail"
-                    >
-                      <Form.Label>Surname</Form.Label>
-                      <Col>
-                        <Form.Control
-                          plaintext
-                          readOnly
-                          defaultValue="Phasha"
-                        />
-                      </Col>
-                    </Form.Group>
-                    <Form.Group
-                      as={Row}
-                      className="mb-3"
-                      controlId="formPlaintextEmail"
-                    >
-                      <Form.Label>Email:</Form.Label>
-                      <Col>
-                        <Form.Control
-                          plaintext
-                          readOnly
-                          defaultValue="email@example.com"
-                        />
-                      </Col>
-                    </Form.Group>
-                    <Form.Group
-                      as={Row}
-                      className="mb-3"
-                      controlId="formPlaintextEmail"
-                    >
-                      <Form.Label>WhatsApp Number:</Form.Label>
-                      <Col>
-                        <Form.Control
-                          plaintext
-                          readOnly
-                          defaultValue="067 785 5462"
-                        />
-                      </Col>
-                    </Form.Group>
-                    <Form.Group
-                      as={Row}
-                      className="mb-3"
-                      controlId="formPlaintextEmail"
-                    >
-                      <Form.Label>Office Number:</Form.Label>
-                      <Col>
-                        <Form.Control
-                          plaintext
-                          readOnly
-                          defaultValue="011 499 8339"
-                        />
-                      </Col>
-                    </Form.Group>
-                  </Form> */}
+                <Col>                  
                   <h4>Name</h4>
                   <h4>Surname</h4>
                   <h4>Phone Number</h4>
@@ -178,7 +106,7 @@ class StudentPortalForm extends Component {
               </Row>
             </Modal.Body>
             <Modal.Footer className="header">
-              <Button variant="secondary" onClick={this.hideModal}>
+              <Button action onClick={this.hideModal} variant="secondary" > 
                 Close
               </Button>
             </Modal.Footer>
@@ -215,10 +143,8 @@ class StudentPortalForm extends Component {
                           Submission Deadlines
                         </Card.Header>
                         <ListGroup>
-                          Colour |Date |Data Structures
-                          {/* < div className= "box">
-                                                                    keke
-                                                                </div> */}
+                          {/* Colour |Date |Data Structures */}
+                        
                         </ListGroup>
                       </Card>
                     </Col>

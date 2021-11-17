@@ -18,7 +18,7 @@ class FooterForm extends Component {
         };
     
     this.showModal = this.showModal.bind(this);
-    this.hideModal = this.hideModal(this);
+    this.hideModal = this.hideModal.bind(this);
     }
     showModal = () => {
         this.setState ({show:true});
@@ -44,7 +44,7 @@ class FooterForm extends Component {
         </Offcanvas.Header>
         <Offcanvas.Body>
             <hr/>
-           <Card body> <SiMicrosoftoffice/> Microsoft Office</Card>
+           <Card body   > <SiMicrosoftoffice/> Microsoft Office</Card>
            <br/>
            <Card body>This is some text within a card body.</Card>
            <br/>
@@ -111,7 +111,7 @@ class FooterForm extends Component {
             <Row>
                  <Col >
                         <img class="rounded-circle"  src={Image2} alt="CampusImage"
-                        className="edulogo" onClick={this.showModal}  />
+                        className="edulogo" action onClick={this.showModal}  />
                 </Col>
             </Row>
         </Container>
