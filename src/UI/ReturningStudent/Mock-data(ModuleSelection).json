@@ -1,32 +1,22 @@
 [
   {
     "id": 1,
-    "module": "Discrete Maths",
-    "cost": 5000
+    "module": "Data Structures and Algorithms in C#",
+    "cost": 7384.92
   },
   {
     "id": 2,
-    "module": "Operations Management",
-    "cost": 4800
+    "module": "Database Management System",
+    "cost": 7384.92
   },
   {
     "id": 3,
-    "module": "Calculus",
-    "cost": 5000
+    "module": "IT Project Management",
+    "cost": 7384.92
   },
   {
     "id": 4,
-    "module": "Physics",
-    "cost": 4500
-  },
-  {
-    "id": 5,
-    "module": "Statistics",
-    "cost": 7000
-  },
-  {
-    "id": 6,
-    "module": "Psychology",
-    "cost": 2000
+    "module": "Data Science",
+    "cost": 7384.92
   }
 ]
