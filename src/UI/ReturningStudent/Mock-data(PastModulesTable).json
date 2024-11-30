@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "PastModule": "Data Structures and Algorithms in C#",
+    "ModuleCode": "ITDCA2-B44",
+    "Grade": "P"
+  },
+  {
+    "id": 2,
+    "PastModule": "Database Management System",
+    "ModuleCode": "ITDIB2-B44",
+    "Grade": "P"
+  },
+  {
+    "id": 3,
+    "PastModule": "IT Project Management",
+    "ModuleCode": "ITPMA2-B33",
+    "Grade": "F"
+  },
+  {
+    "id": 4,
+    "PastModule": "Data Science",
+    "ModuleCode": "ITDSB2-B33",
+    "Grade": "P*"
+  }
+]

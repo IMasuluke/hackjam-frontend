@@ -1,0 +1,15 @@
+.Parent {
+  background-color: rgba(255, 255, 255, 1);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.cards {
+  margin-right: 5px;
+  padding-left: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}

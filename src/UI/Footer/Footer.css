@@ -1,0 +1,18 @@
+.footer {
+  position: relative;
+  margin-top: 39.5%;
+  height: 5.5vh;
+  background-color: #15305d;
+}
+
+.footerText {
+  padding-top: 0.5%;
+  margin-left: 5vw;
+  color: white;
+  font-family: Arial;
+  font-size: 60%;
+}
+
+.footerLink {
+  text-decoration: none;
+}

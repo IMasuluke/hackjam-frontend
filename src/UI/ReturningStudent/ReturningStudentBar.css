@@ -1,0 +1,39 @@
+.BarDiv {
+  text-align: center;
+}
+
+.BarDivTextReturningStudent {
+  margin-top: 2vh;
+  font-family: Arial;
+  position: relative;
+  margin-right: 31%;
+  color: #707070;
+}
+
+.BarDivTextStep {
+  margin-top: 2vh;
+  font-family: Arial;
+  color: #707070;
+  position: relative;
+  margin-left: 31%;
+}
+
+.h2Size {
+  font-size: 100%;
+}
+
+.HrBar {
+  margin-top: -15vh;
+  position: relative;
+  width: 17%;
+}
+
+.hrBarLight {
+  border-color: #7ecced;
+  background-color: #7ecced;
+}
+
+.hrBarHeavy {
+  border-color: #15305d;
+  background-color: #15305d;
+}
